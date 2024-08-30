@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FiChevronDown, FiMenu, FiX } from "react-icons/fi";
 import { Link, useLocation } from "react-router-dom"; // Import useLocation
-import logo, { assets } from "../../assests/assests";
+import  { assets } from "../../assests/assests";
 
 const NavbarNew = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -143,11 +143,11 @@ const NavbarNew = () => {
             </Link>
             <div className="relative group"
             >
-              <a href="" className= "text-black text-xl hover:text-red-500 transition-all duration-300 tracking-wide font-medium">
+              <div className= "text-black text-xl hover:text-red-500 transition-all duration-300 tracking-wide font-medium">
                 Career
-                </a>
+                </div >
                 <div className="absolute left-0 top-full  hidden group-hover:block bg-white shadow-lg px-4 py-4 h-24 w-28 content-center rounded-xl ">
-                  <a href="" className="">COMING SOON</a>
+                  <div className="">COMING SOON</div>
                 </div>
             </div>
             <Link to="/ContactUs"

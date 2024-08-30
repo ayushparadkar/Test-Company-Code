@@ -5,31 +5,31 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import CallIcon from '@mui/icons-material/Call';
 import EmailIcon from '@mui/icons-material/Email';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import { assets } from '../../assests/assests';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
         <div className='bg-black text-gray-300'>
-            
+             
            <div className='container mx-auto py-10 px-6'>
              <div className='grid md:grid-cols-3 grid-cols-1 gap-7 md:mt-24 md:ml-32'>
              <div className='   '>
                     <h2 className='text-2xl font-bold mb-4 text-slate-200 pl-3'>SERVICES</h2>
                     <ul className='space-y-2 text-neutral-400  text-lg '>
-                        <li  className=' hover:text-white   w-56'><a href="" ><span><ChevronRightIcon/></span > Full Stack Development</a></li>
-                        <li className=' hover:text-white  w-44'><a href=""><span><ChevronRightIcon/></span>web development</a></li>
-                        <li className=' hover:text-white  w-36'><a href=""><span><ChevronRightIcon/></span>web designing</a></li>
+                        <li  className=' hover:text-white   w-56'><Link to='/FullStackDevelopment' ><span><ChevronRightIcon/></span > Full Stack Development</Link></li>
+                        <li className=' hover:text-white  w-44'><Link to="/WebDevelopment"><span><ChevronRightIcon/></span>web development</Link></li>
+                        <li className=' hover:text-white  w-36'><Link to="/WebDesign"><span><ChevronRightIcon/></span>web designing</Link></li>
 
                     </ul>
                 </div>
                 <div className='   '>
                     <h2 className='text-2xl font-bold mb-4 text-slate-200 pl-3 '>QUICK LINK</h2>
                     <ul className='space-y-2 text-neutral-400  p-0  w-24 text-lg '>
-                        <li className=' hover:text-white w-28  '><a href=""><span><ChevronRightIcon/></span> About us</a></li>
-                        <li className=' hover:text-white'><a href=""><span><ChevronRightIcon/></span>Services</a></li>
-                        <li className=' hover:text-white'><a href=""><span><ChevronRightIcon/></span>Portfolio</a></li>
-                        <li className=' hover:text-white'><a href=""><span><ChevronRightIcon/></span>Carrier</a></li>
-                        <li className=' hover:text-white w-28'><a href=""><span><ChevronRightIcon/></span>Contact us</a></li>
+                        <li className=' hover:text-white w-28  '><Link to="/AboutUs"><span><ChevronRightIcon/></span> About us</Link></li>
+                        <li className=' hover:text-white'><Link to="/Services"><span><ChevronRightIcon/></span>Services</Link></li>
+                        <li className=' hover:text-white'><Link to="/Portfolio"><span><ChevronRightIcon/></span>Portfolio</Link></li>
+                        <li className=' hover:text-white'><span><ChevronRightIcon/></span>Carrier</li>
+                        <li className=' hover:text-white w-28'><span><ChevronRightIcon/></span>Contact us</li>
                     </ul>
                 </div>
                 <div className=''>
@@ -44,14 +44,14 @@ const Footer = () => {
                         <h2 className='text-2xl font-bold mb-4 text-slate-200'>FIND US ON</h2>
                         <div className='text-white   flex '>
                             <div className='p-1 m-1 rounded-full bg-red-500  hover:bg-white hover:text-black'>
-                                <a href=""><LinkedInIcon /></a>
+                                <div><LinkedInIcon /></div>
                             </div>
                             <div className='p-1 m-1 rounded-full  bg-red-500  hover:bg-white hover:text-black  '>
-                                <a href=""><InstagramIcon /></a>
+                                <div><InstagramIcon /></div>
                             </div>
 
                             <div className='p-1 m-1  rounded-full bg-red-500  hover:bg-white hover:text-black'>
-                                <a href=""><FacebookIcon /></a>
+                                <div><FacebookIcon /></div>
                             </div>
                        
                     </div>
@@ -63,6 +63,7 @@ const Footer = () => {
             <p className='text-center text-neutral-400 text-lg mt-5  '>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
              </div>
         </div>
+        
        
     )
 }

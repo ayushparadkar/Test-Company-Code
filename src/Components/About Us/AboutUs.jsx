@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+
 import { assets } from '../../assests/assests';
 import { ArrowForward, Instagram, LinkedIn } from '@mui/icons-material';
 import WOW from 'wowjs';
@@ -21,7 +21,7 @@ const AboutUs = () => {
     return (
         <div className=''>
             <div className="relative text-center mb-2 mt-5 mx-5 ">
-                <img className="h-72 w-full object-cover rounded-xl" src={assets.AboutUs} alt="" />
+                <img className="h-72 w-full object-cover rounded-xl" src={assets.AboutUs} alt="header about us" />
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-gray-700 ">
                     <div className='flex flex-col font-bold text-3xl wow animate__animated animate__pulse mb-5'>
                         <span>"Innovating today, shaping tomorrow. Together,</span>

@@ -8,7 +8,7 @@ import profile from "../../assests/insta-profile.png";
 import userProfile from "../../assests/insta-user-profile.png";
 import story from "../../assests/story.png";
 import savedItem from "../../assests/insta-saved.png";
-import background from "../../assests/1315464.jpg";
+
 import namelogo from "../../assests/Instagram-name-logo-transparent-PNG.png";
 import "animate.css";
 import WOW from "wowjs";
@@ -37,7 +37,7 @@ const InstagramCloneSection = () => {
           alt="Instagram Logo"
           className="mx-auto w-14 h-14 opacity-90 filter drop-shadow-2xl animate-pulse hover:scale-110 transition-transform duration-500 ease-in-out"
         />
-        <img src={namelogo} className="mt-0 w-36 h-24 mx-auto" />
+        <img src={namelogo} alt="clone " className="mt-0 w-36 h-24 mx-auto" />
         <h1 className="text-6xl font-extrabold mt-1 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 animate-gradient-x wow animate__animated animate__zoomInUp animate__delay-1s">
           Instagram Clone
         </h1>

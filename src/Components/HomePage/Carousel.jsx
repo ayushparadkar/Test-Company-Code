@@ -9,10 +9,7 @@ import {
   FaGlobe,
   FaShieldAlt,
   FaMobileAlt,
-  FaUserShield,
-  FaBullseye,
-  FaPalette,
-  FaHandshake,
+  
 } from "react-icons/fa"; // Additional icons added
 import img1 from "../../assests/futurism-perspective-digital-nomads-lifestyle.jpg";
 import img2 from "../../assests/cyberpunk-illustration-with-neon-colors-futuristic-technology.jpg";
