@@ -17,7 +17,7 @@ const Projects = () => {
             Projects We Have Done
           </div>
           <div className="wow animate__animated animate__slideInRight p-4 text-gray-700">
-            <p className="leading-relaxed text-lg">
+            <p className="leading-relaxed text-lg text-gray-500">
               We successfully completed a full stack web development project, covering both design and development. The website is fully responsive, user-friendly, and meets all client specifications. The client expressed high satisfaction with the quality, attention to detail, and timely delivery. Their positive feedback reflects our commitment to excellence.
             </p>
             <Link to ="/Portfolio">
@@ -28,31 +28,32 @@ const Projects = () => {
           </div>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 wow animate__animated animate__backInLeft  ">
+        <ProjectCard
+            imgSrc={assets.pharmacy}
+            title="Pharmacy System"
+            description="We successfully developed a pharmacy system for our client."
+             link='/Portfolio'
+          />
           <ProjectCard
             imgSrc={assets.foodimg}
             title="Food Delivery Website"
-            description="We successfully developed a food delivery website for our client."
-            link='/'
+            description="We successfully developed a food delivery clone."
+            link='/Portfolio'
 
           />
           <ProjectCard
             imgSrc={assets.ecommerce}
             title="E-commerce Platform"
-            description="We successfully developed an e-commerce platform for our client."
-             link='/'
+            description="We successfully developed an e-commerce website."
+             link='/Portfolio'
           />
           <ProjectCard
             imgSrc={assets.stockmarket}
             title="Stock Market Platform"
-            description="We successfully developed a stock market platform for our client."
-             link='/'
+            description="We successfully developed a instagram clone."
+             link='/Portfolio'
           />
-          <ProjectCard
-            imgSrc={assets.pharmacy}
-            title="Pharmacy System"
-            description="We successfully developed a pharmacy system for our client."
-             link='/'
-          />
+
         </div>
       </div>
     </div>

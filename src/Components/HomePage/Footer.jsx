@@ -58,7 +58,7 @@ const Footer = () => {
                 </div>
                </div>
             </div>
-            <hr className='md:mt-28 mt-10 mx-8'/>
+            <hr className='md:mt-28 mt-10 mx-8 '/>
             
             <p className='text-center text-neutral-400 text-sm mt-5 '>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
              </div>

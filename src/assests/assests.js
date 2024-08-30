@@ -40,7 +40,12 @@ import img1 from "./futurism-perspective-digital-nomads-lifestyle.jpg";
 import img2 from "./futuristic-business-scene-with-ultra-modern-ambiance.jpg";
 import img3 from "./futuristic-hand-working-laptop.jpg";
 import img4 from "./scene-with-business-person-working-futuristic-office-job.jpg";
-
+import Service1 from './Service1.jpg'
+import Service2 from './Service2.jpg'
+import Service3 from './Service3.jpg'
+import WWB from './WWB.jpg'
+import why from './WHY.jpg'
+import PortfolioMain from './PortfolioMain.png'
 
 export const  assets = {
     logo,
@@ -84,5 +89,11 @@ export const  assets = {
    img1,
    img2,
    img3,
-   img4
+   img4,
+   Service1,
+   Service2,
+   Service3,
+   WWB,
+   why,
+   PortfolioMain
 }

@@ -121,7 +121,7 @@ const Form = () => {
                 background: "linear-gradient(90deg, #FF416C 0%, #FF4B2B 100%)",
               }}
             >
-              Contact Us
+              Submit
             </Button>
           </div>
         </form>

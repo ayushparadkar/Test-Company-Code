@@ -38,9 +38,9 @@ const FoodDelevery = () => {
                 <p>FOOD DELIVERY</p>
                 <p className="italic">Clone</p>
               </div>
-              <div className="bg-gray-800 rounded-xl p-2 ">
+              <div className="bg-gray-800 rounded-xl p-2  ">
                 <div className='text-white text-2xl'>HOME PAGE</div>
-                <img src={assets.header} className="h-72" alt="Home Page" />
+                <img src={assets.header} className="h-44 lg:h-52 xl:h-72" alt="Home Page" />
               </div>
             </div>
             <div className='w-96 ml-32'>
@@ -51,7 +51,7 @@ const FoodDelevery = () => {
                 >
                   {images.map((image, index) => (
                     <div key={index} className="w-full flex-shrink-0">
-                      <img src={image} alt={`Slide ${index}`} className="w-full h-64 object-cover" />
+                      <img src={image} alt={`Slide ${index}`} className="w-full h- xl:h-64 object-cover" />
                     </div>
                   ))}
                 </div>

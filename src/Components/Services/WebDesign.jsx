@@ -1,303 +1,245 @@
 import React, { useEffect } from "react";
 import myImage from "../../assests/ZZZZZ2898.jpg";
-import image1 from "../../assests/web-design-concept-with-drawings.jpg";
-import image2 from "../../assests/26815.jpg";
-import image3 from "../../assests/Wavy_Tech-22_Single-06.jpg";
-import image4 from "../../assests/4872663.jpg";
+import CustomeWebsite from "../../assests/custome.jpg";
+import UIUx from "../../assests/7706581.jpg";
+import responsive from "../../assests/responsive.jpg";
+import GraphicDesign from "../../assests/3569186.jpg";
+import Redesign from "../../assests/6926521.jpg";
+import Brand from "../../assests/Brand.jpeg";
+
 import {
-  FaReact,
-  FaNodeJs,
-  FaJava,
+  FaPalette,
+  FaLaptop,
+  FaPencilRuler,
+  FaMobile,
+  FaLightbulb,
   FaArrowRight,
-  FaShopify,
-  FaDatabase,
-  FaWordpress,
 } from "react-icons/fa";
-import { SiMongodb, SiSpringboot } from "react-icons/si";
-import { Button, TextField, Typography } from "@mui/material";
-import { Phone, Email, LocationOn, ArrowForward } from "@mui/icons-material";
 import "animate.css";
 import WOW from "wowjs";
 
 const WebDesign = () => {
-    useEffect(() => {
-        new WOW.WOW({
-          live: false,
-        }).init();
-      }, []);
-      return (
-        <div className="bg-gray-100 min-h-screen py-10 px-5">
-          {/* Full Stack Development Banner */}
-          <div className="relative mb-10">
-            <img
-              src={myImage}
-              alt="Full Stack Development"
-              className="w-full h-72 object-cover rounded-lg"
-            />
-            <div className=" absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 rounded-lg">
-              <h1 className="wow animate__animated animate__lightSpeedInLeft text-4xl font-bold text-shadow-lg">
-                Web Development Services
-              </h1>
-              <p className="wow animate__animated animate__lightSpeedInLeft mt-4 text-lg mb-10">
-                We provide end-to-end full stack development solutions for all your
-                business needs.
-              </p>
-              <button className="wow animate__animated animate__lightSpeedInRight bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-2 px-6 rounded-full flex items-center transition-all duration-300">
-                Contact Us
-                <FaArrowRight className="  ml-2" />
-              </button>
-            </div>
-          </div>
-    
-          {/* What Web Solution Do You Need Section */}
-          <div className="text-center mb-16">
-            <h2 className="wow  animate__animated animate__fadeInDownBig text-3xl font-bold">
-              What Web Solution Do You Need?
-            </h2>
-            <p className="wow  animate__animated animate__fadeInDownBig mt-4 text-gray-600">
-              We offer a wide range of services to cater to your web development
-              needs.
-            </p>
-          </div>
-    
-          {/* Services Section */}
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card Component */}
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image1}
-                  alt="Web Design"
-                  className="size-fit absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Web Design
-                </h3>
-                <p className="wow  animate__animated animate__backInLeft text-center text-gray-600 mb-10">
-                  Creative and responsive web design services to make your business
-                  stand out.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image2}
-                  alt="Web Portal"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Web Portal
-                </h3>
-                <p className="wow  animate__animated animate__backInLeft text-center text-gray-600 mb-10">
-                  Secure and scalable web portals tailored to your business
-                  requirements.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image3}
-                  alt="Testing & Deployment"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Testing & Deployment
-                </h3>
-                <p className="wow  animate__animated animate__backInRight text-center text-gray-600 mb-10">
-                  Comprehensive testing and smooth deployment services for your web
-                  applications.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image4}
-                  alt="Maintenance"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Maintenance
-                </h3>
-                <p className="wow  animate__animated animate__backInRight text-center text-gray-600 mb-10">
-                  Ongoing support and maintenance to keep your web applications
-                  running smoothly.
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          {/* Technologies Section */}
-          <div className="mt-32">
-            <h2 className="wow  animate__animated animate__backInUp text-2xl font-bold text-center mb-16">
-              Technologies We Use
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
-              <div className=" wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaReact className="text-4xl text-blue-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  React.js
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaNodeJs className="text-4xl text-green-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Node.js
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaJava className="text-4xl text-red-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Java
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <SiSpringboot className="text-4xl text-green-700 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Spring Boot
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <SiMongodb className="text-4xl text-green-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  MongoDB
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaDatabase className="text-4xl text-blue-600 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  SQL
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaShopify className="text-4xl text-green-600 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Shopify
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaWordpress className="text-4xl text-blue-700 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  WordPress
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          {/* Contact Us Section */}
-          <div className="bg-gradient-to-r from-gray-200 to-gray-300 py-10 mt-20 rounded-lg shadow-inner">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-              {/* Contact Details */}
-              <div className="flex flex-col justify-center px-5">
-                <Typography variant="h4" gutterBottom className="font-bold">
-                  Contact Us
-                </Typography>
-                <div className="flex items-center mt-5">
-                  <Phone className="text-red-500 mr-2" />
-                  <Typography variant="body1">+1 234 567 890</Typography>
-                </div>
-                <div className="flex items-center mt-5">
-                  <Email className="text-red-500 mr-2" />
-                  <Typography variant="body1">info@mywebsite.com</Typography>
-                </div>
-                <div className="flex items-center mt-5">
-                  <LocationOn className="text-red-500 mr-2" />
-                  <Typography variant="body1">
-                    1234 Street Name, City, Country
-                  </Typography>
-                </div>
-              </div>
-    
-              {/* Enquiry Form */}
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <Typography variant="h4" gutterBottom className="font-bold">
-                  Enquiry Now
-                </Typography>
-                <form>
-                  <div className="grid grid-cols-1 gap-6 mt-4">
-                    <TextField
-                      label="Name"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company Name"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company URL"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company Email ID"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Optional Personal Email ID"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Work Phone Number"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Optional Personal Number"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Business Details"
-                      variant="outlined"
-                      multiline
-                      rows={4}
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      fullWidth
-                      className="mt-6 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white py-3 rounded-md flex items-center justify-center transition-all duration-300"
-                    >
-                      Submit <ArrowForward className="ml-2" />
-                    </Button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-indigo-100 to-white py-16 px-4 md:px-16 lg:px-32 ">
+      {/* Header Section */}
+      <div className="relative mb-20 ">
+        <img
+          src={myImage}
+          alt="Web Design Services"
+          className="w-full h-96 object-cover rounded-lg shadow-lg "
+        />
+        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 text-white text-center p-6 rounded-lg">
+          <h1 className="wow animate__animated animate__fadeInUp text-5xl font-extrabold mb-4">
+            Web Design Services
+          </h1>
+          <p className="wow animate__animated animate__fadeInRight text-lg mb-8 max-w-2xl">
+            We blend creativity with functionality to craft visually stunning
+            websites that captivate your audience and drive results.
+          </p>
+          <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full flex items-center transition-all duration-300 wow animate__animated animate__backInRight">
+            Contact Us
+            <FaArrowRight className="ml-2" />
+          </button>
         </div>
-      );
-    };
-    
+      </div>
 
-export default WebDesign
+      {/* Services Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20 wow animate__animated animate__fadeInUp">
+        {[
+          {
+            title: "Custom Website Design",
+            description:
+              "Creating unique designs tailored to your brand’s personality and vision.",
+            image: CustomeWebsite,
+          },
+          {
+            title: "UI/UX Design",
+            description:
+              "Designing intuitive and user-friendly interfaces for enhanced user experiences.",
+            image: UIUx,
+          },
+          {
+            title: "Mobile-First Design",
+            description:
+              "Optimizing designs for seamless mobile experiences, ensuring your site looks great on any device.",
+            image: responsive,
+          },
+          {
+            title: "Graphic Design",
+            description:
+              "Crafting visually engaging graphics that enhance your website’s look and feel.",
+            image: GraphicDesign,
+          },
+          {
+            title: "Redesign and Revamp",
+            description:
+              "Refreshing outdated websites with modern aesthetics and functionalities.",
+            image: Redesign,
+          },
+          {
+            title: "Brand Identity Design",
+            description:
+              "Creating cohesive branding elements that align with your company’s vision and goals.",
+            image: Brand,
+          },
+        ].map((service, index) => (
+          <div
+            key={index}
+            className="bg-white rounded-2xl shadow-xl hover:shadow-2xl transform hover:-translate-y-2 transition-all duration-300 overflow-hidden animate__animated animate__fadeInUp"
+          >
+            <div className="relative h-64">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover rounded-t-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+            </div>
+            <div className="p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-3">
+                {service.title}
+              </h3>
+              <p className="text-gray-600">{service.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Design Approach Section */}
+      <div className="bg-gradient-to-r from-purple-200 to-white p-12 rounded-xl shadow-inner mb-20">
+        <h2 className="text-3xl font-bold text-center text-gray-700 mb-10">
+          Our Design Approach
+        </h2>
+        <div className="flex flex-wrap justify-center gap-12">
+          {[
+            {
+              icon: <FaPalette className="text-6xl text-purple-500" />,
+              name: "Creative Concepts",
+            },
+            {
+              icon: <FaPencilRuler className="text-6xl text-purple-600" />,
+              name: "Wireframing & Prototyping",
+            },
+            {
+              icon: <FaLaptop className="text-6xl text-purple-700" />,
+              name: "Responsive Design",
+            },
+            {
+              icon: <FaLightbulb className="text-6xl text-yellow-600" />,
+              name: "Innovative Ideas",
+            },
+            {
+              icon: <FaMobile className="text-6xl text-blue-600" />,
+              name: "Mobile Compatibility",
+            },
+          ].map((approach, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-8 bg-white rounded-full shadow-lg transform transition-transform duration-300 hover:scale-105"
+              style={{ height: "190px", width: "190px" }}
+            >
+              {approach.icon}
+              <span className="text-gray-800 font-medium mt-3 text-center">
+                {approach.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* FAQ Section */}
+      <div className="bg-stone-100 py-16 px-8 my-20 rounded-2xl shadow-2xl">
+        <section className="my-20">
+          <h2 className="text-4xl font-extrabold text-center mb-12 text-gray-900">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-2xl mx-auto space-y-6">
+            {[
+              {
+                question: "What is your design process for creating a website?",
+                answer:
+                  "Our design process includes understanding your brand, creating wireframes and prototypes, designing the user interface, and refining based on feedback. We ensure the design aligns with your brand’s identity and goals.",
+              },
+              {
+                question:
+                  "How do you ensure the website design aligns with my brand?",
+                answer:
+                  "We start by learning about your brand’s values, mission, and target audience. This information helps us craft designs that reflect your brand’s identity. We also use your feedback throughout the design process to ensure alignment.",
+              },
+              {
+                question:
+                  "What is mobile-first design, and why is it important?",
+                answer:
+                  "Mobile-first design is an approach where we design the website for mobile devices first and then scale up for larger screens. This ensures a seamless user experience across all devices, improving usability and engagement.",
+              },
+              {
+                question:
+                  "How do you handle revisions and feedback during the design phase?",
+                answer:
+                  "We provide opportunities for feedback at multiple stages of the design process. You can review wireframes, prototypes, and final designs. We make revisions based on your feedback to ensure the design meets your expectations.",
+              },
+              {
+                question:
+                  "Do you offer graphic design services as part of your web design?",
+                answer:
+                  "Yes, we offer graphic design services including custom illustrations, icons, and branding elements to enhance the visual appeal of your website and ensure consistency with your brand identity.",
+              },
+              {
+                question:
+                  "How long does it take to complete a website design project?",
+                answer:
+                  "The duration depends on the complexity of the project and your requirements. On average, a complete website design project takes 4-6 weeks, including feedback and revisions. Complex projects may take longer.",
+              },
+            ].map((faq, index) => (
+              <details
+                key={index}
+                className="p-6 bg-white shadow-md rounded-lg transition-all duration-300 ease-in-out group"
+                open={index === 0 ? true : false}
+              >
+                <summary className="text-lg font-semibold text-gray-800 cursor-pointer flex items-center justify-between hover:text-red-600">
+                  {faq.question}
+                  <svg
+                    className="w-6 h-6 text-red-500 group-hover:text-red-700 transition-transform duration-300 ease-in-out group-open:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </summary>
+                <p className="mt-4 text-gray-700">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* Call to Action Section */}
+      <div className="wow animate__animated animate__fadeInUp bg-white p-12 rounded-2xl shadow-xl text-center my-16">
+        <h2 className="text-4xl font-bold text-gray-800 mb-6">
+          Let’s Build Your Dream Website
+        </h2>
+        <p className="text-gray-600 mb-8">
+          Ready to create a cutting-edge website? Contact us to get started
+          today!
+        </p>
+        <button className="wow animate__animated animate__heartBeat animate__delay-1s bg-blue-500 text-white py-3 px-6 rounded-full font-bold hover:bg-blue-600 transition-all duration-300">
+          Get Started
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default WebDesign;

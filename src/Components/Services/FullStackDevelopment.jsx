@@ -14,290 +14,243 @@ import {
   FaWordpress,
 } from "react-icons/fa";
 import { SiMongodb, SiSpringboot } from "react-icons/si";
-import { Button, TextField, Typography } from "@mui/material";
-import { Phone, Email, LocationOn, ArrowForward } from "@mui/icons-material";
-import "animate.css";
 import WOW from "wowjs";
 
 const FullStackDevelopment = () => {
-    useEffect(() => {
-        new WOW.WOW({
-          live: false,
-        }).init();
-      }, []);
-      return (
-        <div className="bg-gray-100 min-h-screen py-10 px-5">
-          {/* Full Stack Development Banner */}
-          <div className="relative mb-10">
-            <img
-              src={myImage}
-              alt="Full Stack Development"
-              className="w-full h-72 object-cover rounded-lg"
-            />
-            <div className=" absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 rounded-lg">
-              <h1 className="wow animate__animated animate__lightSpeedInLeft text-4xl font-bold text-shadow-lg">
-                Web Development Services
-              </h1>
-              <p className="wow animate__animated animate__lightSpeedInLeft mt-4 text-lg mb-10">
-                We provide end-to-end full stack development solutions for all your
-                business needs.
-              </p>
-              <button className="wow animate__animated animate__lightSpeedInRight bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-2 px-6 rounded-full flex items-center transition-all duration-300">
-                Contact Us
-                <FaArrowRight className="  ml-2" />
-              </button>
-            </div>
-          </div>
-    
-          {/* What Web Solution Do You Need Section */}
-          <div className="text-center mb-16">
-            <h2 className="wow  animate__animated animate__fadeInDownBig text-3xl font-bold">
-              What Web Solution Do You Need?
-            </h2>
-            <p className="wow  animate__animated animate__fadeInDownBig mt-4 text-gray-600">
-              We offer a wide range of services to cater to your web development
-              needs.
-            </p>
-          </div>
-    
-          {/* Services Section */}
-          <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {/* Card Component */}
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image1}
-                  alt="Web Design"
-                  className="size-fit absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Web Design
-                </h3>
-                <p className="wow  animate__animated animate__backInLeft text-center text-gray-600 mb-10">
-                  Creative and responsive web design services to make your business
-                  stand out.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image2}
-                  alt="Web Portal"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Web Portal
-                </h3>
-                <p className="wow  animate__animated animate__backInLeft text-center text-gray-600 mb-10">
-                  Secure and scalable web portals tailored to your business
-                  requirements.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image3}
-                  alt="Testing & Deployment"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Testing & Deployment
-                </h3>
-                <p className="wow  animate__animated animate__backInRight text-center text-gray-600 mb-10">
-                  Comprehensive testing and smooth deployment services for your web
-                  applications.
-                </p>
-              </div>
-            </div>
-    
-            <div className="wow  animate__animated animate__fadeInUpBig bg-white rounded-lg shadow-lg hover:shadow-2xl transition-transform duration-300 overflow-hidden flex flex-col">
-              <div className="relative w-full h-60">
-                <img
-                  src={image4}
-                  alt="Maintenance"
-                  className="absolute inset-0 w-full h-full object-cover rounded-t-lg"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent rounded-t-lg" />
-              </div>
-              <div className="p-6 flex-1 flex flex-col justify-between bg-white">
-                <h3 className="text-2xl font-semibold text-center text-gray-800 mt-10">
-                  Maintenance
-                </h3>
-                <p className="wow  animate__animated animate__backInRight text-center text-gray-600 mb-10">
-                  Ongoing support and maintenance to keep your web applications
-                  running smoothly.
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          {/* Technologies Section */}
-          <div className="mt-32">
-            <h2 className="wow  animate__animated animate__backInUp text-2xl font-bold text-center mb-16">
-              Technologies We Use
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 justify-center">
-              <div className=" wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaReact className="text-4xl text-blue-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  React.js
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaNodeJs className="text-4xl text-green-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Node.js
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaJava className="text-4xl text-red-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Java
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <SiSpringboot className="text-4xl text-green-700 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Spring Boot
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <SiMongodb className="text-4xl text-green-500 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  MongoDB
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaDatabase className="text-4xl text-blue-600 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  SQL
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaShopify className="text-4xl text-green-600 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  Shopify
-                </p>
-              </div>
-              <div className="wow  animate__animated animate__backInUp bg-white rounded-full shadow-lg p-6 flex flex-col items-center text-center transition-transform transform hover:scale-105 hover:shadow-2xl">
-                <FaWordpress className="text-4xl text-blue-700 mb-2" />
-                <p className="wow  animate__animated animate__bounceInDown text-lg">
-                  WordPress
-                </p>
-              </div>
-            </div>
-          </div>
-    
-          {/* Contact Us Section */}
-          <div className="bg-gradient-to-r from-gray-200 to-gray-300 py-10 mt-20 rounded-lg shadow-inner">
-            <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-              {/* Contact Details */}
-              <div className="flex flex-col justify-center px-5">
-                <Typography variant="h4" gutterBottom className="font-bold">
-                  Contact Us
-                </Typography>
-                <div className="flex items-center mt-5">
-                  <Phone className="text-red-500 mr-2" />
-                  <Typography variant="body1">+1 234 567 890</Typography>
-                </div>
-                <div className="flex items-center mt-5">
-                  <Email className="text-red-500 mr-2" />
-                  <Typography variant="body1">info@mywebsite.com</Typography>
-                </div>
-                <div className="flex items-center mt-5">
-                  <LocationOn className="text-red-500 mr-2" />
-                  <Typography variant="body1">
-                    1234 Street Name, City, Country
-                  </Typography>
-                </div>
-              </div>
-    
-              {/* Enquiry Form */}
-              <div className="bg-white rounded-lg p-6 shadow-md">
-                <Typography variant="h4" gutterBottom className="font-bold">
-                  Enquiry Now
-                </Typography>
-                <form>
-                  <div className="grid grid-cols-1 gap-6 mt-4">
-                    <TextField
-                      label="Name"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company Name"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company URL"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Company Email ID"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Optional Personal Email ID"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Work Phone Number"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Optional Personal Number"
-                      variant="outlined"
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <TextField
-                      label="Business Details"
-                      variant="outlined"
-                      multiline
-                      rows={4}
-                      fullWidth
-                      className="mt-2"
-                    />
-                    <Button
-                      variant="contained"
-                      color="primary"
-                      fullWidth
-                      className="mt-6 bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white py-3 rounded-md flex items-center justify-center transition-all duration-300"
-                    >
-                      Submit <ArrowForward className="ml-2" />
-                    </Button>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      );
-    };
-    
+  useEffect(() => {
+    new WOW.WOW({
+      live: false,
+    }).init();
+  }, []);
 
-export default FullStackDevelopment
+  return (
+    <div className="min-h-screen bg-white py-16 px-4 md:px-16 lg:px-32">
+      {/* Header Section */}
+      <div className="relative mb-16">
+        <img
+          src={myImage}
+          alt="Full Stack Development Services"
+          className="w-full h-96 object-cover rounded-lg shadow-lg"
+        />
+        <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center p-6 rounded-lg">
+          <h1 className="wow animate__animated animate__backInLeft text-5xl font-extrabold mb-4">
+            Full Stack Development Services
+          </h1>
+          <p className="wow animate__animated animate__backInUp text-lg mb-8 max-w-2xl">
+            Transform your business with our comprehensive full stack
+            development services, tailored to enhance your digital presence.
+          </p>
+          <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full flex items-center transition-all duration-300 wow animate__animated  animate__lightSpeedInRight animate__bounce animate__delay-1s">
+            Contact Us
+            <FaArrowRight className="ml-2" />
+          </button>
+        </div>
+      </div>
+      {/* Services Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-16 wow animate__animated animate__slideInUp animate__bounce animate__delay-1s">
+        {[
+          {
+            title: "Web Design",
+            description:
+              "Innovative and responsive designs that capture your brand’s essence.",
+            image: image1,
+          },
+          {
+            title: "Web Portal",
+            description:
+              "Robust and secure web portals tailored to your business needs.",
+            image: image2,
+          },
+          {
+            title: "Testing & Deployment",
+            description:
+              "Seamless testing and deployment services for optimal performance.",
+            image: image3,
+          },
+          {
+            title: "Maintenance",
+            description:
+              "Ongoing support and maintenance to keep your web solutions updated.",
+            image: image4,
+          },
+        ].map((service, index) => (
+          <div
+            key={index}
+            className="bg-white  rounded-2xl shadow-lg hover:shadow-2xl  overflow-hidden "
+          >
+            <div className="relative h-64">
+              <img
+                src={service.image}
+                alt={service.title}
+                className="w-full h-full object-cover rounded-t-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
+            </div>
+            <div className="p-6 text-center">
+              <h3 className="text-2xl font-bold text-gray-800 mb-4">
+                {service.title}
+              </h3>
+              <p className="text-gray-600 mb-6">{service.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+      {/* Technologies Section */}
+      <div className="bg-gray-100 py-12 px-6 rounded-xl shadow-inner mb-16 text-center">
+        <h2 className="text-3xl font-bold text-gray-700 mb-8 ">
+          Technologies We Use
+        </h2>
+        <div className="flex flex-wrap justify-center gap-8">
+          {[
+            {
+              icon: <FaReact className="text-4xl text-blue-500" />,
+              name: "React.js",
+            },
+            {
+              icon: <FaNodeJs className="text-4xl text-green-600" />,
+              name: "Node.js",
+            },
+            {
+              icon: <FaJava className="text-4xl text-red-600" />,
+              name: "Java",
+            },
+            {
+              icon: <SiSpringboot className="text-4xl text-green-800" />,
+              name: "Spring Boot",
+            },
+            {
+              icon: <SiMongodb className="text-4xl text-green-500" />,
+              name: "MongoDB",
+            },
+            {
+              icon: <FaDatabase className="text-4xl text-blue-700" />,
+              name: "SQL",
+            },
+            {
+              icon: <FaShopify className="text-4xl text-green-600" />,
+              name: "Shopify",
+            },
+            {
+              icon: <FaWordpress className="text-4xl text-blue-700" />,
+              name: "WordPress",
+            },
+          ].map((tech, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center p-6 bg-white rounded-full shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+              style={{ width: "120px", height: "120px" }}
+            >
+              <div className="flex items-center justify-center h-full">
+                {tech.icon}
+              </div>
+              <span className="text-gray-800 font-medium mt-2 text-sm">
+                {tech.name}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* FAQ */}
+      <div className="bg-stone-100 py-12 px-6 my-16 rounded-2xl shadow-2xl">
+        <section className="my-16">
+          <h2 className="text-4xl font-extrabold text-center mb-10 text-gray-900 wow animate__animated animate__backInDown">
+            Frequently Asked Questions
+          </h2>
+          <div className="max-w-2xl mx-auto space-y-4 wow animate__animated animate__backInUp">
+            {/* FAQ Item */}
+            {[
+              {
+                question: "What is Full Stack Development?",
+                answer:
+                  "Full Stack Development involves working on both the front-end and back-end parts of a web application. This includes everything from creating the user interface to managing databases and server-side logic.",
+              },
+              {
+                question:
+                  "What technologies do you use for Full Stack Development?",
+                answer:
+                  "We use a variety of technologies including React.js, Node.js, Express.js, MongoDB, SQL databases, and more. The specific technologies depend on the project requirements and client preferences.",
+              },
+              {
+                question:
+                  "Can you integrate third-party APIs into my application?",
+                answer:
+                  "Yes, we can integrate third-party APIs to add functionality such as payment processing, data fetching, and social media connections to your application.",
+              },
+              {
+                question:
+                  "How do you ensure the security of my web application?",
+                answer:
+                  "We implement best practices for security, including HTTPS, data encryption, secure authentication methods, and regular security audits to protect your application from vulnerabilities.",
+              },
+              {
+                question: "Do you offer custom software development services?",
+                answer:
+                  "Yes, we offer custom software development tailored to your specific needs. Whether it’s a bespoke web application, e-commerce solution, or enterprise software, we can develop a solution that fits your requirements.",
+              },
+              {
+                question:
+                  "What is the difference between front-end and back-end development?",
+                answer:
+                  "Front-end development focuses on the visual and interactive aspects of a website or application, such as layout and user interface. Back-end development deals with server-side logic, database interactions, and application functionality.",
+              },
+
+              {
+                question:
+                  "Can you help with scaling and optimizing my web application?",
+                answer:
+                  "Yes, we can assist with scaling your application to handle increased traffic and optimizing its performance for faster load times and better user experience.",
+              },
+              {
+                question:
+                  "What kind of support do you offer after the project is completed?",
+                answer:
+                  "We offer post-launch support including bug fixes, updates, and technical assistance to ensure your application continues to perform well and remains up-to-date.",
+              },
+            ].map((faq, index) => (
+              <details
+                key={index}
+                className="p-5 bg-white shadow-md rounded-lg transition-all duration-300 ease-in-out group"
+                open={index === 0 ? true : false}
+              >
+                <summary className="text-lg font-semibold text-gray-800 cursor-pointer flex items-center justify-between hover:text-red-600">
+                  {faq.question}
+                  <svg
+                    className="w-5 h-5 text-red-500 group-hover:text-red-700 transition-transform duration-300 ease-in-out group-open:rotate-180"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
+                      d="M19 9l-7 7-7-7"
+                    ></path>
+                  </svg>
+                </summary>
+                <p className="mt-3 text-gray-700">{faq.answer}</p>
+              </details>
+            ))}
+          </div>
+        </section>
+      </div>
+
+      {/* Contact Section */}
+      <div className="bg-white p-12 rounded-2xl shadow-xl text-center py-16">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4 wow animate__animated animate__backInUp">
+          Get In Touch
+        </h2>
+        <p className="text-gray-600 mb-8">
+          Have a project in mind? Contact us to discuss your requirements.
+        </p>
+        <button className="bg-red-600 hover:bg-red-700 text-white py-3 px-8 rounded-full font-bold transition-all duration-300 wow animate__animated animate__backInRight">
+          Contact Us
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default FullStackDevelopment;

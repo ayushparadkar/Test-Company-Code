@@ -75,7 +75,7 @@ const NavbarNew = () => {
       </div>
 
       {/* Main Navbar */}
-      <nav className="bg-white ">
+      <nav className="bg-white border ">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           {/* Logo with Home Page Link */}
           <div className="flex items-center">
@@ -108,13 +108,12 @@ const NavbarNew = () => {
               >
                 Services
                 <FiChevronDown
-                  className={`ml-1 transform transition-transform duration-300 ${
-                    isDropdownOpen ? "rotate-180" : ""
-                  }`}
+                  className={`ml-1 transform transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""
+                    }`}
                 />
               </button>
               {isDropdownOpen && (
-                <div className="absolute left-0 mt-2 w-48 bg-white bg-opacity-90 border border-red-600 rounded-lg shadow-lg py-2 z-20">
+                <div className="absolute left-0 mt-2 w-48 bg-white bg-opacity-90 border  rounded-lg shadow-lg py-2 z-20">
                   <Link to="/FullStackDevelopment"
                     className="block px-4 py-2 text-black hover:bg-red-600 hover:bg-opacity-20 transition-all duration-300"
                     onClick={() => setIsOpen(false)}
@@ -142,12 +141,15 @@ const NavbarNew = () => {
             >
               Portfolio
             </Link>
-            <a
-              href="#"
-              className="text-black text-xl hover:text-red-500 transition-all duration-300 tracking-wide font-medium"
+            <div className="relative group"
             >
-              Career
-            </a>
+              <a href="" className= "text-black text-xl hover:text-red-500 transition-all duration-300 tracking-wide font-medium">
+                Career
+                </a>
+                <div className="absolute left-0 top-full  hidden group-hover:block bg-white shadow-lg px-4 py-4 h-24 w-28 content-center rounded-xl ">
+                  <a href="" className="">COMING SOON</a>
+                </div>
+            </div>
             <Link to="/ContactUs"
               className="text-black text-xl hover:text-red-500 transition-all duration-300 tracking-wide font-medium"
               onClick={() => setIsOpen(false)}
@@ -183,9 +185,8 @@ const NavbarNew = () => {
             >
               Services{" "}
               <FiChevronDown
-                className={`inline ml-1 transform transition-transform duration-300 ${
-                  isDropdownOpen ? "rotate-180" : ""
-                }`}
+                className={`inline ml-1 transform transition-transform duration-300 ${isDropdownOpen ? "rotate-180" : ""
+                  }`}
               />
             </button>
             {isDropdownOpen && (
