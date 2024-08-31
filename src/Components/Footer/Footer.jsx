@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
-        <div className='bg-black text-gray-300'>
+        <footer className=' bg-gradient-to-br from-gray-900 via-black to-gray-800 text-gray-300 '>
              
            <div className='container mx-auto py-10 px-6'>
              <div className='grid md:grid-cols-3 grid-cols-1 gap-7 md:mt-24 md:ml-32'>
@@ -28,16 +28,16 @@ const Footer = () => {
                         <li className=' hover:text-white w-28  '><Link to="/AboutUs"><span><ChevronRightIcon/></span> About us</Link></li>
                         <li className=' hover:text-white'><Link to="/Services"><span><ChevronRightIcon/></span>Services</Link></li>
                         <li className=' hover:text-white'><Link to="/Portfolio"><span><ChevronRightIcon/></span>Portfolio</Link></li>
-                        <li className=' hover:text-white'><span><ChevronRightIcon/></span>Carrier</li>
-                        <li className=' hover:text-white w-28'><span><ChevronRightIcon/></span>Contact us</li>
+                        <li className=' hover:text-white'><span><ChevronRightIcon/></span>Career</li>
+                        <li className=' hover:text-white w-28'><Link to='/ContactUs'><span><ChevronRightIcon/></span>Contact us</Link></li>
                     </ul>
                 </div>
                 <div className=''>
                     <div>
                         <h2 className='text-2xl font-bold mb-4 text-slate-200 '>GET IN TOUCH</h2>
                         <ul className='text-neutral-400 text-lg' >
-                            <li className=' hover:text-white mb-4  w-40 '><CallIcon />&nbsp; +1-222-787828</li>
-                            <li className='hover:text-white  w-52'><EmailIcon />&nbsp; Contact@tomato.com</li>
+                            <li className=' hover:text-white mb-4  w-44 '><CallIcon />&nbsp; +91 7999031586</li>
+                            <li className='hover:text-white  w-56'><EmailIcon />&nbsp; Contact@tomato.com</li>
                         </ul>
                     </div>
                     <div className='mt-7'>
@@ -62,7 +62,7 @@ const Footer = () => {
             
             <p className='text-center text-neutral-400 text-lg mt-5  '>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
              </div>
-        </div>
+        </footer>
         
        
     )

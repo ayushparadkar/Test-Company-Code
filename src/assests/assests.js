@@ -46,6 +46,7 @@ import Service3 from './Service3.jpg'
 import WWB from './WWB.jpg'
 import why from './WHY.jpg'
 import PortfolioMain from './PortfolioMain.png'
+import Mongodb from './Mongodb.png'
 
 export const  assets = {
     logo,
@@ -95,5 +96,6 @@ export const  assets = {
    Service3,
    WWB,
    why,
-   PortfolioMain
+   PortfolioMain,
+   Mongodb
 }

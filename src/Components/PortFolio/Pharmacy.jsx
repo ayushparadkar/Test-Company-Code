@@ -16,7 +16,7 @@ const Pharmacy = () => {
   }, []);
 
   return (
-    <section className="relative py-20 bg-gradient-to-r from-white via-blue-100 to-teal-200 overflow-hidden">
+    <section className="relative mb-10 sm:py-20 bg-gradient-to-r from-white via-blue-100 to-teal-200 overflow-hidden">
       {/* Animated Particles */}
       <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
         <div className="w-96 h-96 bg-gradient-to-r from-cyan-300 via-teal-400 to-blue-500 rounded-full opacity-20 filter blur-2xl animate-spin-slow"></div>
@@ -24,15 +24,15 @@ const Pharmacy = () => {
       </div>
 
       {/* Title and Logo */}
-      <div className="text-center mb-16 relative z-10">
-        <div className="flex justify-center items-center mb-8">
+      <div className="text-center sm:mb-16 relative z-10">
+        <div className="flex justify-center items-center sm:mb-8">
           <img
             src={logo}
             alt="Myristica Logo"
-            className="w-24 h-24 animate__animated animate__fadeInDown"
+            className="sm:w-24 h-24 animate__animated animate__fadeInDown"
           />
         </div>
-        <h1 className="text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-700 wow animate__animated animate__fadeIn animate__delay-1s">
+        <h1 className="text-xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-700 wow animate__animated animate__fadeIn animate__delay-1s">
           MYRISTICA PHARMACEUTICALS
         </h1>
         <a
@@ -45,9 +45,9 @@ const Pharmacy = () => {
         </a>
       </div>
 
-      <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center relative z-10">
+      <div className="container mx-auto px-2 sm:px-6 flex  lg:flex-row items-center relative z-10">
         {/* Left Side: Cards */}
-        <div className="w-full lg:w-1/2 grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className=" w-1/2 grid  sm:grid-cols-2 gap-2 sm:gap-8">
           {[img3, img4, img5, img6].map((img, index) => (
             <div
               key={index}
@@ -56,10 +56,10 @@ const Pharmacy = () => {
               <img
                 src={img}
                 alt={`Card ${index}`}
-                className="w-full h-52 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:brightness-110"
+                className="h-20 w-40 ml-3 sm:ml-0 sm:w-full sm:h-52 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:brightness-110"
               />
-              <div className="p-6">
-                <h2 className="text-2xl font-semibold text-white">
+              <div className="sm:p-6">
+                <h2 className="text-xs text-center sm:text-start sm:text-2xl font-semibold text-white">
                   {index === 0
                     ? "Welcome to Our Pharmacy"
                     : index === 1
@@ -68,7 +68,7 @@ const Pharmacy = () => {
                     ? "Get in Touch with Us"
                     : "Learn About Us"}
                 </h2>
-                <p className="text-gray-400 mt-2">
+                <p className= "hidden sm:block sm:text-base text-gray-400 line-clamp-3 sm:mt-2">
                   {index === 0
                     ? "Your health is our priority. Explore our comprehensive pharmacy solutions for a healthier you."
                     : index === 1
@@ -83,13 +83,13 @@ const Pharmacy = () => {
         </div>
 
         {/* Right Side: Text, Quote, and Medical Kit Image */}
-        <div className="w-full lg:w-1/2 hidden lg:flex flex-col justify-center items-center space-y-8 text-center relative">
+        <div className="  w-1/2  lg:flex flex-col justify-center items-center space-y-8 text-center relative">
           {/* Text Section */}
           <div className="wow animate__animated animate__fadeInRight animate__delay-1s max-w-md">
-            <h2 className="text-4xl font-bold text-red-500 mb-5 mt-10">
+            <h2 className= " text-sm   sm:text-4xl font-bold text-red-500 sm:mb-5 mt-10">
               Your Health, Our Commitment
             </h2>
-            <p className="text-gray-700 text-lg">
+            <p className="line-clamp-4  sm:mt-0 text-gray-700 text-xs sm:text-lg">
               At Myristica Pharmaceuticals, we are dedicated to bringing you
               top-quality medicines and healthcare products. Our goal is to
               empower you with wellness solutions that are trusted, effective,
@@ -97,10 +97,10 @@ const Pharmacy = () => {
             </p>
           </div>
           <div className="wow animate__animated animate__fadeInRight animate__delay-1.5s max-w-md">
-            <h2 className="text-4xl font-bold text-blue-600 mb-5">
+            <h2 className="  text-sm sm:text-4xl font-bold text-blue-600 sm:mb-5">
               Experience Excellence
             </h2>
-            <p className="text-gray-700 text-lg">
+            <p className="text-gray-700 text-xs sm:text-lg line-clamp-3">
               With a commitment to excellence, we continually strive to enhance
               your pharmacy experience through innovative products and
               exceptional customer care.
@@ -109,7 +109,7 @@ const Pharmacy = () => {
 
           {/* Quote Section */}
           <div className="wow animate__animated animate__fadeInRight animate__delay-1.8s max-w-md">
-            <p className="text-xl italic text-gray-800 ">
+            <p className=" text:lg sm:text-xl italic text-gray-800  ">
               "The art of medicine consists in amusing the patient while nature
               cures the disease." — Voltaire
             </p>

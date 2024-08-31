@@ -1,15 +1,14 @@
 import React, { useEffect } from 'react';
-
 import { assets } from '../../assests/assests';
-import { ArrowForward, Instagram, LinkedIn } from '@mui/icons-material';
+import {  Instagram, LinkedIn } from '@mui/icons-material';
 import WOW from 'wowjs';
 import Diversity2Icon from '@mui/icons-material/Diversity2';
 import { RiFocus2Line } from "react-icons/ri";
 import 'animate.css';
 import { Link } from 'react-router-dom';
-import { Button } from '@mui/material';
 import { GiBurningPassion } from "react-icons/gi";
 import { FaHandsHelping } from "react-icons/fa";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 
 const AboutUs = () => {
     useEffect(() => {
@@ -23,21 +22,14 @@ const AboutUs = () => {
             <div className="relative text-center mb-2 mt-5 mx-5 ">
                 <img className="h-72 w-full object-cover rounded-xl" src={assets.AboutUs} alt="header about us" />
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-gray-700 ">
-                    <div className='flex flex-col font-bold text-3xl wow animate__animated animate__pulse mb-5'>
+                    <div className='flex flex-col font-bold text-3xl wow animate__animated animate__pulse sm:mb-5'>
                         <span>"Innovating today, shaping tomorrow. Together,</span>
                         <span>we create the future."</span>
                     </div>
                     <Link to="/ContactUs">
-                        <Button size="large"
-                            variant="contained"
-                            color="error"
-                            endIcon={<ArrowForward />}
-                            className="px-8 py-4 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 animate-buttonHover "
-                            style={{
-                                background: "linear-gradient(90deg, #FF416C 0%, #FF4B2B 100%)",
-                            }}>
-                            Contact us
-                        </Button>
+                    <button className="rounded-full font-bold text-white py-3 px-6 bg-red-500 hover:bg-red-700 sm:mt-6 inline-flex items-center gap-2 transition-transform transform hover:scale-105">
+              Contact Us <ArrowForwardIcon/>
+            </button>
                     </Link>
                 </div>
             </div>

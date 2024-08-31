@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
-import { Button, TextField, Typography } from "@mui/material";
-import { Phone, Email, LocationOn, ArrowForward } from "@mui/icons-material";
-
+import {  TextField, Typography } from "@mui/material";
+import { Phone, Email, LocationOn } from "@mui/icons-material";
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import "animate.css";
 import WOW from "wowjs";
 
@@ -23,7 +23,7 @@ const Form = () => {
             fontSize: { xs: "2.5rem", sm: "3rem", md: "4rem", lg: "4.5rem" },
             lineHeight: 1.2,
           }}
-          className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-500 animate-gradientShift wow animate__animated animate__lightSpeedInLeft animate__delay-1s"
+          className=" bg-clip-text text-red-400  animate-gradientShift wow animate__animated animate__lightSpeedInLeft animate__delay-1s"
         >
           Contact Us
         </Typography>
@@ -63,7 +63,7 @@ const Form = () => {
             fontSize: { xs: "2.5rem", sm: "3rem", md: "4rem", lg: "4.5rem" },
             lineHeight: 1.2,
           }}
-          className="text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-pink-500 animate-gradientShift wow animate__animated animate__lightSpeedInRight animate__delay-1s"
+          className=" bg-clip-text  text-red-500 animate-gradientShift wow animate__animated animate__lightSpeedInRight animate__delay-1s"
         >
           Enquiry Now
         </Typography>
@@ -111,18 +111,9 @@ const Form = () => {
             className="rounded-lg bg-gray-100 transition-transform duration-300 transform hover:scale-105 focus:scale-105 shadow-md focus:shadow-lg"
           />
           <div className="flex justify-end mt-8">
-            <Button
-              size="large"
-              variant="contained"
-              color="error"
-              endIcon={<ArrowForward />}
-              className="px-8 py-4 rounded-full shadow-lg transition-transform duration-300 transform hover:scale-105 animate-buttonHover"
-              style={{
-                background: "linear-gradient(90deg, #FF416C 0%, #FF4B2B 100%)",
-              }}
-            >
-              Submit
-            </Button>
+          <button className="rounded-full  text-white py-3 px-6 bg-red-500 hover:bg-red-700 mt-6 inline-flex items-center gap-2 transition-transform transform hover:scale-105">
+              Submit <ArrowForwardIcon/>
+            </button>
           </div>
         </form>
       </div>

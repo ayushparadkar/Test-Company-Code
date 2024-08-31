@@ -53,12 +53,12 @@ const InstagramCloneSection = () => {
         <img
           src={laptopimg}
           alt="Laptop"
-          className=" w-[950px] lg:w-[600px] xl:h-[400px]  relative z-10"
+          className="   xl:h-[393px]  relative z-10"
         />
 
         {/* Adjust the width and height to fit the screen */}
         <div
-          className="absolute top-[5%] left-[38%] w-[24%] h-[70%] z-20 overflow-hidden rounded-md"
+          className="absolute top-[5%]  sm:h-56 w-56  sm:w-96  z-20 overflow-hidden rounded-md"
           style={{
             boxShadow: "0 0 10px rgba(0, 0, 0, 0.5)",
             boxSizing: "border-box",
@@ -76,12 +76,12 @@ const InstagramCloneSection = () => {
               (image, index) => (
                 <div
                   key={index}
-                  className="relative hover:scale-105 transition-transform duration-100 ease-in-out"
+                  className="relative  hover:scale-105 transition-transform duration-100 ease-in-out"
                 >
                   <img
                     src={image}
                     alt={`Slide ${index + 1}`}
-                    className="w-full h-full object-cover transition-opacity duration-700 ease-in-out hover:opacity-90"
+                    className=" h-32 lg:w-96 sm:h-52  object-cover transition-opacity duration-700 ease-in-out hover:opacity-90"
                   />
                 </div>
               )

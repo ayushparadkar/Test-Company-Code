@@ -21,7 +21,7 @@ const Projects = () => {
               We successfully completed a full stack web development project, covering both design and development. The website is fully responsive, user-friendly, and meets all client specifications. The client expressed high satisfaction with the quality, attention to detail, and timely delivery. Their positive feedback reflects our commitment to excellence.
             </p>
             <Link to ="/Portfolio">
-            <button className="rounded-lg text-white py-3 px-6 bg-red-500 hover:bg-red-700 mt-6 inline-flex items-center gap-2 transition-transform transform hover:scale-105">
+            <button className="rounded-full text-white py-3 px-6 bg-red-500 hover:bg-red-700 mt-6 inline-flex items-center gap-2 transition-transform transform hover:scale-105">
               View All Projects <ArrowForwardIcon />
             </button>
             </Link>

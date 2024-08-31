@@ -63,7 +63,7 @@ const services = [
         title: "FULL STACK DEVELOPMENT",
         image: assets.fullStack,
         description: "From static applications to highly customized dashboard apps, our Full stack engineers deliver with ease, precision, and within timelines.",
-        icons: [assets.html, assets.react, assets.nodejs],
+        icons: [assets.Mongodb, assets.react, assets.nodejs],
         link:"/FullStackDevelopment"
         
     },

@@ -1,42 +1,71 @@
-import React from 'react';
-import { assets } from '../../assests/assests';
-
+import React from "react";
+import { assets } from "../../assests/assests";
 
 const ECommercePortfolio = () => {
   return (
-    <div className='px-14 mb-5'>
-    <div className='bg-gradient-to-r from-rose-700 via-rose-500 to-rose-800 p-5'>
-      <div className=''>
-        <div className=' '>
-          <p className='font-bold text-4xl  text-white mb-2 p-2 text-center'>E-commerce Website</p> <hr className='border-t-2 border-black rounded-xl' />
+    <div className="px-4 sm:px-6 lg:px-14 mb-5">
+      <div className="bg-gradient-to-r from-rose-600 via-rose-400 to-rose-600 p-8 rounded-lg shadow-lg">
+        <div className="text-center">
+          <p className="wow animate_animated animatefadeInRight  font-extrabold text-3xl sm:text-4xl lg:text-5xl text-white mb-4 p-2">
+            E-commerce Website
+          </p>
+          <hr className="border-t-2 border-gray-200 rounded-full w-24 mx-auto" />
         </div>
-      </div>
-      <div className='flex m-10 gap-10'>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce})`, boxShadow: '-25px 20px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce2})`, boxShadow: '-25px 20px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce3})`, boxShadow: '-25px 25px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce4})`, boxShadow: '-25px 25px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-      </div>
-      <div className='flex justify-center gap-20'>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce5})`, boxShadow: '-25px 25px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce6})`, boxShadow: '-25px 25px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-        <div className='w-80 h-48 bg-cover  transition-transform duration-500 ease-in-out transform hover:scale-105' style={{ backgroundImage: `url(${assets.Ecommerce7})`, boxShadow: '-25px 25px 25px 7px rgba(0, 0, 0, 0.5)' }}></div>
-      </div>
-      <div className=' w-96 mt-10bg-gradient-to-r  rounded-xl p-5'>
-        <p className='font-bold text-xl mt-10'>Nature Nest</p>
-        <p className=' text-white '>Unlock endless possibilities with our eCommerce site,
-          Where shopping is effortless and always just right.
-          Discover top brands and exclusive deals galore,
-          All from the comfort of your home, and so much more!</p>
-      </div>
-      <div>
-        <div className=' mb-5'>
-          <hr className='border-t-2 border-gray-500 rounded-xl' />
+
+        <div className="wow animate_animated animatefadeInUp  grid -ml-6 sm:ml-0 grid-cols-4 gap-8 mt-8 lg:mt-12">
+          {[
+            assets.Ecommerce,
+            assets.Ecommerce2,
+            assets.Ecommerce3,
+            assets.Ecommerce4,
+          ].map((image, index) => (
+            <div
+              key={index}
+              className="w-20 h-20 sm:w-full sm:h-52 bg-cover rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+              style={{
+                backgroundImage: `url(${image})`,
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
+              }}
+            ></div>
+          ))}
+        </div>
+
+        <div className="wow animate_animated animatefadeInUp animate_delay-0.8s grid -ml-3 sm:ml-0 grid-cols-3 gap-8 mt-8 lg:mt-12">
+          {[assets.Ecommerce5, assets.Ecommerce6, assets.Ecommerce7].map(
+            (image, index) => (
+              <div
+                key={index}
+                className="w-24 h-20 sm:w-full sm:h-52 bg-cover rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+                style={{
+                  backgroundImage: `url(${image})`,
+                  boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
+                }}
+              ></div>
+            )
+          )}
+        </div>
+
+        {/* Centering the Target <div> */}
+        <div className="flex justify-center mt-12">
+          <div className="w-full lg:w-96 bg-white bg-opacity-10 rounded-xl p-6 text-center shadow-lg">
+            <p className="wow animate_animated animatefadeInLeft animate_delay-1s text-lg font-bold sm:text-2xl text-white">
+              Nature Nest
+            </p>
+            <p className=" wow animate_animated animatefadeInRight animate_delay-0.8s text-xs sm:text-base text-white mt-4">
+              Unlock endless possibilities with our eCommerce site, where
+              shopping is effortless and always just right. Discover top brands
+              and exclusive deals galore, all from the comfort of your home, and
+              so much more!
+            </p>
+          </div>
+        </div>
+
+        <div className="mt-8">
+          <hr className="border-t-2 border-gray-300 rounded-full" />
         </div>
       </div>
     </div>
-  </div>
-  )
-}
+  );
+};
 
-export default ECommercePortfolio
+export default ECommercePortfolio;

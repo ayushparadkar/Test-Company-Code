@@ -15,6 +15,7 @@ import img1 from "../../assests/futurism-perspective-digital-nomads-lifestyle.jp
 import img2 from "../../assests/cyberpunk-illustration-with-neon-colors-futuristic-technology.jpg";
 import img3 from "../../assests/cinematic-render-hologram-globe.jpg";
 import img4 from "../../assests/website-hosting-concept-with-bright-light.jpg";
+import { Link } from "react-router-dom";
 
 const BlobCarousel = () => {
   const carouselData = [
@@ -116,7 +117,7 @@ const BlobCarousel = () => {
     <div className="flex flex-col items-center justify-center min-h-screen p-4 md:p-8 bg-gray-100">
       {/* Welcome Section */}
       <div className="text-center mb-8 px-4 md:px-0">
-        <h2 className="text-2xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-2xl md:text-4xl font-bold text-gray-800 animate__heartBeat animate__animated wow">
           Welcome to Our Digital World
         </h2>
         <p className="text-base md:text-xl text-gray-600 mt-4">
@@ -126,9 +127,9 @@ const BlobCarousel = () => {
       </div>
 
       {/* Blob Carousel */}
-      <div className="flex flex-col md:flex-row items-center justify-center w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full ">
         {/* Left Text Section */}
-        <div className="w-full md:w-1/2 mb-8 md:mb-0 px-4 md:px-8">
+        <div className="w-full md:w-1/2 mb-8 md:mb-0 px-4 md:px-8 animate__fadeInLeft animate__animated wow">
           <h1 className="text-3xl md:text-5xl font-bold mb-8 text-left text-gray-800">
             <span className="flex items-center gap-2">
               {currentSlide.icon}
@@ -154,15 +155,17 @@ const BlobCarousel = () => {
             ))}
           </div>
           <div className="mt-8 md:mt-12">
+            <Link to='/ContactUs'>
             <button className="px-6 py-3 bg-red-500 text-white rounded-full shadow-md hover:bg-red-600">
               Get Started
             </button>
+            </Link>
           </div>
         </div>
 
         {/* Right Blob Section */}
         <div className="relative w-full md:w-1/2 hidden md:flex items-center justify-center px-4 md:px-0  ">
-          <div className="relative w-[200px] h-[200px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] bg-orange-500 rounded-[60%] blob-shadow overflow-hidden flex items-center justify-center">
+          <div className="relative w-[300px] h-[300px] md:w-[600px] md:h-[600px] bg-orange-500 rounded-[60%] blob-shadow overflow-hidden flex items-center justify-center">
             {/* Carousel Images */}
             <div className="absolute inset-0 flex items-center justify-center ">
               <div

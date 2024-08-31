@@ -17,6 +17,7 @@ import {
 } from "react-icons/fa";
 import "animate.css";
 import WOW from "wowjs";
+import { Link } from "react-router-dom";
 
 const WebDesign = () => {
   useEffect(() => {
@@ -41,10 +42,12 @@ const WebDesign = () => {
             We blend creativity with functionality to craft visually stunning
             websites that captivate your audience and drive results.
           </p>
+          <Link to='/ContactUs'>
           <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full flex items-center transition-all duration-300 wow animate__animated animate__backInRight">
             Contact Us
             <FaArrowRight className="ml-2" />
           </button>
+          </Link>
         </div>
       </div>
 
@@ -234,9 +237,11 @@ const WebDesign = () => {
           Ready to create a cutting-edge website? Contact us to get started
           today!
         </p>
+        <Link to='/ContactUs'>
         <button className="wow animate__animated animate__heartBeat animate__delay-1s bg-blue-500 text-white py-3 px-6 rounded-full font-bold hover:bg-blue-600 transition-all duration-300">
           Get Started
         </button>
+        </Link>
       </div>
     </div>
   );

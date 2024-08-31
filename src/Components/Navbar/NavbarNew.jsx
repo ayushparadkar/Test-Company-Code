@@ -70,7 +70,7 @@ const NavbarNew = () => {
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-gray-300 text-sm py-2 shadow-lg">
         <div className="container mx-auto flex justify-between items-center px-4">
-          <div>Contact: +1-234-567-890 | Email: info@company.com</div>
+          <div>Contact: +91 7999031586 | Email: info@company.com</div>
         </div>
       </div>
 
@@ -171,7 +171,7 @@ const NavbarNew = () => {
 
         {/* Mobile Menu */}
         {isOpen && (
-          <div className="md:hidden bg-white shadow-lg border-t border-red-500 animate-slide-in-right">
+          <div className="md:hidden bg-white font-bold shadow-lg border-t border-red-500 animate-slide-in-right">
             <Link to="/AboutUs"
               href="#"
               className="block px-4 py-3 text-black hover:text-red-500 transition-all duration-300 tracking-wide"
@@ -211,7 +211,7 @@ const NavbarNew = () => {
                 </Link>
               </div>
             )}
-            <Link to="/PortFolioRoute"
+            <Link to="/Portfolio"
               className="block px-4 py-3 text-black hover:text-red-500 transition-all duration-300 tracking-wide"
               onClick={() => setIsOpen(false)}
             >

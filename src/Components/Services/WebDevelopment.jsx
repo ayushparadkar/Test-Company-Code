@@ -18,6 +18,7 @@ import {
 
 import "animate.css";
 import WOW from "wowjs";
+import { Link } from "react-router-dom";
 
 const WebDevelopment = () => {
   useEffect(() => {
@@ -61,10 +62,12 @@ const WebDevelopment = () => {
             Building responsive, innovative, and dynamic web applications to
             elevate your digital presence.
           </p>
+          <Link to='/ContactUs'>
           <button className="wow animate__animated animate__fadeInUp animate__delay-2s bg-gradient-to-r from-red-500 to-red-700 hover:from-red-600 hover:to-red-800 text-white font-bold py-2 px-4 md:px-6 rounded-full flex items-center transition-all duration-300">
             Contact Us
             <FaArrowRight className="ml-2" />
           </button>
+          </Link>
         </div>
       </div>
 
@@ -237,9 +240,11 @@ const WebDevelopment = () => {
           Ready to create a cutting-edge website? Contact us to get started
           today!
         </p>
+        <Link to='/ContactUs'>
         <button className="wow animate__animated animate__heartBeat animate__delay-1s bg-blue-500 text-white py-3 px-6 rounded-full font-bold hover:bg-blue-600 transition-all duration-300">
           Get Started
         </button>
+        </Link>
       </div>
     </div>
   );
