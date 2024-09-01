@@ -2,9 +2,9 @@ import React from 'react';
 import { assets } from '../../assests/assests.js';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from 'react-router-dom';
-
-
-
+import pharma from "../../assests/myristicapharmaceutical.png"
+import Ecomm from '../../assests/eccom.jpg'
+import social from '../../assests/social.jpg'
 const Projects = () => {
   return (
     <div className="px-6 py-16 bg-gray-100">
@@ -29,26 +29,27 @@ const Projects = () => {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 wow animate__animated animate__backInLeft  ">
         <ProjectCard
-            imgSrc={assets.pharmacy}
+            imgSrc={pharma}
             title="Pharmacy System"
             description="We successfully developed a pharmacy system for our client."
              link='/Portfolio'
           />
           <ProjectCard
-            imgSrc={assets.foodimg}
+            imgSrc={assets.header}
             title="Food Delivery Website"
             description="We successfully developed a food delivery clone."
             link='/Portfolio'
 
           />
           <ProjectCard
-            imgSrc={assets.ecommerce}
+            imgSrc={Ecomm}
             title="E-commerce Platform"
             description="We successfully developed an e-commerce website."
              link='/Portfolio'
+             
           />
           <ProjectCard
-            imgSrc={assets.stockmarket}
+            imgSrc={social}
             title="Stock Market Platform"
             description="We successfully developed a instagram clone."
              link='/Portfolio'

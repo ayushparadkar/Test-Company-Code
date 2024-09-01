@@ -71,7 +71,7 @@ const services = [
         title: "WEB DESIGNING",
         image: assets.webdesigning,
         description: "Our design team crafts unique and modern designs that make your website stand out, leaving a lasting impression.",
-        icons: [assets.html, assets.react, assets.nodejs],
+        icons: [assets.tailwind, assets.palette, assets.css3],
         link:"/WebDesign"
     },
 ];

@@ -14,6 +14,7 @@ import PortFolioRoute from './Components/PortFolio/PortFolioRoute';
 import WebDevelopment from './Components/Services/WebDevelopment';
 import FullStackDevelopment from './Components/Services/FullStackDevelopment';
 import WebDesign from './Components/Services/WebDesign';
+import NotFound from './Components/NotFound';
 
 
 function App() {
@@ -34,7 +35,7 @@ function App() {
     <Route path="/WebDevelopment" element={<WebDevelopment />} />
     <Route path="/FullStackDevelopment" element={<FullStackDevelopment/>} />
     <Route path="/WebDesign" element={<WebDesign/>} />
-    
+    <Route path='/*' element={<NotFound/>}></Route>
     </Routes> 
 
    <Footer/> 

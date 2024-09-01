@@ -47,6 +47,10 @@ import WWB from './WWB.jpg'
 import why from './WHY.jpg'
 import PortfolioMain from './PortfolioMain.png'
 import Mongodb from './Mongodb.png'
+import page from './404page.jpg' 
+import tailwind from './tailwindcss.png'
+import palette from './palette.png'
+import css3 from './css3.png'
 
 export const  assets = {
     logo,
@@ -97,5 +101,9 @@ export const  assets = {
    WWB,
    why,
    PortfolioMain,
-   Mongodb
+   Mongodb,
+   page,
+   tailwind,
+   palette,
+   css3
 }

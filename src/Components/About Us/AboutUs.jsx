@@ -105,7 +105,7 @@ const AboutUs = () => {
                                 <img
                                     src={assets.mens1}
                                     alt="Roshan Khapre"
-                                    className="w-full h-full object-cover rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-200"
+                                    className="w-full h-full object-cover bg-zinc-200 rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-200"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -129,7 +129,7 @@ const AboutUs = () => {
                                 <img
                                     src={assets.mens2}
                                     alt="Ayush Paradkar"
-                                    className="w-full h-full object-cover rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-200"
+                                    className="w-full h-full bg-gray-200 object-cover rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-200"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -153,7 +153,7 @@ const AboutUs = () => {
                                 <img
                                     src={assets.mens3}
                                     alt="Shubham Kinkar"
-                                    className="w-full h-full object-cover rounded-full shadow-lg group-hover:shadow-xl transition-shadow duration-200"
+                                    className="w-full h-full object-cover rounded-full bg-slate-200 shadow-lg group-hover:shadow-xl transition-shadow duration-200"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
