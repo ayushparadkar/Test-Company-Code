@@ -10,6 +10,7 @@ const PortfolioHeader = () => {
         src={assets.PortfolioMain}
         alt=""
         className="w-full h-full object-cover"
+        loading='lazy'
       />
       <div className="absolute inset-0 flex    font-bold text-center p-4 ">
 

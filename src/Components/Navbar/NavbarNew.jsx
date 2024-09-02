@@ -69,21 +69,21 @@ const NavbarNew = () => {
     <header className="w-full sticky top-0 z-50 " ref={navRef}>
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-gray-300 text-sm py-2 shadow-lg">
-        <div className="container mx-auto flex justify-between items-center px-4">
-          <div>Contact: +91 7999031586 | Email: info@company.com</div>
+        <div className="container mx-auto   items-center px-4">
+          <div className="sm:flex sm:flex-row ">Contact: +91 7999031586 <span className="hidden  sm:block">&nbsp;|&nbsp;</span> <span className="flex sm:flex-none " >Email: contact@hiddenleaftechnologies.com</span></div>
         </div>
       </div>
 
       {/* Main Navbar */}
       <nav className="bg-white border ">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
+        <div className="container mx-auto px-4 py-2 flex items-center justify-between">
           {/* Logo with Home Page Link */}
           <div className="flex items-center">
             <Link to="/">
               <img
                 src={assets.logo}
                 alt="Company Logo"
-                className="h-10 w-auto rounded-lg"
+                className="h-14 w-44 sm:w-40 rounded-lg"
               />
             </Link>
           </div>

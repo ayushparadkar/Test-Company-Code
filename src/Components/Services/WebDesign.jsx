@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import myImage from "../../assests/ZZZZZ2898.jpg";
-import CustomeWebsite from "../../assests/custome.jpg";
-import UIUx from "../../assests/7706581.jpg";
-import responsive from "../../assests/responsive.jpg";
-import GraphicDesign from "../../assests/3569186.jpg";
-import Redesign from "../../assests/6926521.jpg";
-import Brand from "../../assests/Brand.jpeg";
+import myImage from "../../assests/ZZZZZ2898.webp";
+import CustomeWebsite from "../../assests/custome.webp";
+import UIUx from "../../assests/7706581.webp";
+import responsive from "../../assests/responsive.webp";
+import GraphicDesign from "../../assests/3569186.webp";
+import Redesign from "../../assests/6926521.webp";
+import Brand from "../../assests/Brand.webp";
 
 import {
   FaPalette,
@@ -33,6 +33,7 @@ const WebDesign = () => {
           src={myImage}
           alt="Web Design Services"
           className="w-full h-96 object-cover rounded-lg shadow-lg "
+          loading="lazy"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-60 text-white text-center p-6 rounded-lg">
           <h1 className="wow animate__animated animate__fadeInUp text-5xl font-extrabold mb-4">
@@ -100,6 +101,7 @@ const WebDesign = () => {
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover rounded-t-2xl"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
             </div>

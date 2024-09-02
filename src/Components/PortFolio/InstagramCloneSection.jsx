@@ -2,14 +2,14 @@ import React, { useEffect } from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import laptopimg from "../../assests/laptop-png-6768.png";
-import logo from "../../assests/Lovepik_com-450129809-Instagram.png";
-import feed from "../../assests/insta-feed.png";
-import profile from "../../assests/insta-profile.png";
-import userProfile from "../../assests/insta-user-profile.png";
-import story from "../../assests/story.png";
-import savedItem from "../../assests/insta-saved.png";
+import logo from "../../assests/Lovepik_com-450129809-Instagram.webp";
+import feed from "../../assests/insta-feed.webp";
+import profile from "../../assests/insta-profile.webp";
+import userProfile from "../../assests/insta-user-profile.webp";
+import story from "../../assests/story.webp";
+import savedItem from "../../assests/insta-saved (1).webp";
 
-import namelogo from "../../assests/Instagram-name-logo-transparent-PNG.png";
+import namelogo from "../../assests/Instagram-name-logo-transparent-PNG.webp";
 import "animate.css";
 import WOW from "wowjs";
 
@@ -36,8 +36,9 @@ const InstagramCloneSection = () => {
           src={logo}
           alt="Instagram Logo"
           className="mx-auto w-14 h-14 opacity-90 filter drop-shadow-2xl animate-pulse hover:scale-110 transition-transform duration-500 ease-in-out"
+          loading="lazy"
         />
-        <img src={namelogo} alt="clone " className="mt-0 w-36 h-24 mx-auto" />
+        <img src={namelogo} alt="clone " className="mt-0 w-36 h-24 mx-auto" loading="lazy" />
         <h1 className="text-6xl font-extrabold mt-1 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500 animate-gradient-x wow animate__animated animate__zoomInUp animate__delay-1s">
           Instagram Clone
         </h1>
@@ -54,6 +55,7 @@ const InstagramCloneSection = () => {
           src={laptopimg}
           alt="Laptop"
           className="   xl:h-[393px]  relative z-10"
+          loading="lazy"
         />
 
         {/* Adjust the width and height to fit the screen */}
@@ -82,6 +84,7 @@ const InstagramCloneSection = () => {
                     src={image}
                     alt={`Slide ${index + 1}`}
                     className=" h-32 lg:w-96 sm:h-52  object-cover transition-opacity duration-700 ease-in-out hover:opacity-90"
+                    loading="lazy"
                   />
                 </div>
               )
@@ -128,6 +131,7 @@ const InstagramCloneSection = () => {
               src={feature.image}
               alt={feature.title}
               className="w-full rounded-lg mb-4 object-cover hover:opacity-90 transition-opacity duration-500"
+              loading="lazy"
             />
             <h3 className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">
               {feature.title}

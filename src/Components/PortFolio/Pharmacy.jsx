@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
-import img3 from "../../assests/myristicapharmaceutical.png";
-import img4 from "../../assests/myritica-products.png";
-import img5 from "../../assests/myritica-contact.png";
-import img6 from "../../assests/myritica-aboutus.png";
-import medicalkit from "../../assests/Pharmacyshop3.png";
-import logo from "../../assests/imageLogo-1.png";
+import img3 from "../../assests/myristicapharmaceutical.webp";
+import img4 from "../../assests/myritica-products.webp";
+import img5 from "../../assests/myritica-contact.webp";
+import img6 from "../../assests/myritica-aboutus.webp";
+import medicalkit from "../../assests/Pharmacyshop3.webp";
+import logo from "../../assests/imageLogo-1.webp";
 import "animate.css";
 import WOW from "wowjs";
 
@@ -30,6 +30,7 @@ const Pharmacy = () => {
             src={logo}
             alt="Myristica Logo"
             className="sm:w-24 h-24 animate__animated animate__fadeInDown"
+            loading="lazy"
           />
         </div>
         <h1 className="text-xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 to-blue-700 wow animate__animated animate__fadeIn animate__delay-1s">
@@ -57,6 +58,7 @@ const Pharmacy = () => {
                 src={img}
                 alt={`Card ${index}`}
                 className="h-20 w-40 ml-3 sm:ml-0 sm:w-full sm:h-52 object-cover transition-transform duration-300 ease-in-out transform hover:scale-110 hover:brightness-110"
+                loading="lazy"
               />
               <div className="sm:p-6">
                 <h2 className="text-xs text-center sm:text-start sm:text-2xl font-semibold text-white">
@@ -122,6 +124,7 @@ const Pharmacy = () => {
               src={medicalkit}
               alt="Medical Kit"
               className="relative z-10 w-96 h-full object-contain transition-transform duration-500 ease-in-out transform hover:scale-110 hover:rotate-6"
+              loading="lazy"
             />
           </div>
         </div>

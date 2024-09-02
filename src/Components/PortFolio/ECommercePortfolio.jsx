@@ -12,7 +12,7 @@ const ECommercePortfolio = () => {
           <hr className="border-t-2 border-gray-200 rounded-full w-24 mx-auto" />
         </div>
 
-        <div className="wow animate_animated animatefadeInUp  grid -ml-6 sm:ml-0 grid-cols-4 gap-8 mt-8 lg:mt-12">
+        <div className="wow animate_animated animatefadeInUp grid -ml-6 sm:ml-0 grid-cols-4 gap-8 mt-8 lg:mt-12">
           {[
             assets.Ecommerce,
             assets.Ecommerce2,
@@ -21,14 +21,21 @@ const ECommercePortfolio = () => {
           ].map((image, index) => (
             <div
               key={index}
-              className="w-20 h-20 sm:w-full sm:h-52 bg-cover rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
+              className="w-20 h-20 sm:w-full sm:h-52 rounded-lg transition-transform duration-500 ease-in-out transform hover:scale-105"
               style={{
-                backgroundImage: `url(${image})`,
                 boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.15)",
               }}
-            ></div>
+            >
+              <img
+                src={image}
+                alt={`Ecommerce ${index + 1}`}
+                className="w-full h-full object-cover rounded-lg"
+                loading="lazy"
+              />
+            </div>
           ))}
         </div>
+
 
         <div className="wow animate_animated animatefadeInUp animate_delay-0.8s grid -ml-3 sm:ml-0 grid-cols-3 gap-8 mt-8 lg:mt-12">
           {[assets.Ecommerce5, assets.Ecommerce6, assets.Ecommerce7].map(

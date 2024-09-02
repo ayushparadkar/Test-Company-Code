@@ -30,7 +30,7 @@ const FoodDelevery = () => {
     <div>
       <div>
         <div className="relative md:px-14 mb-5">
-          <img src={assets.FOODBG} alt="Food Delivery Background" className="w-full h-auto l" />
+          <img src={assets.FOODBG} alt="Food Delivery Background" className="w-full h-auto l"  loading='lazy'/>
 
           <div className="absolute inset-0 sm:p-14">
             <div className='flex justify-evenly'>
@@ -40,7 +40,7 @@ const FoodDelevery = () => {
               </div>
               <div className=" rounded-xl p-2 sm:h-72 wow animate__animated animate__fadeInRight">
                 <div className='text-white sm:text-2xl'>HOME PAGE</div>
-                <img src={assets.header} className=" h-16 sm:h-72" alt="Home Page" />
+                <img src={assets.header} className=" h-16 sm:h-72" alt="Home Page" loading='lazy' />
               </div>
             </div>
             <div className='w-28  ml-8 h-14 sm:w-96 sm:ml-32'>
@@ -51,7 +51,7 @@ const FoodDelevery = () => {
                 >
                   {images.map((image, index) => (
                     <div key={index} className="w-full flex-shrink-0">
-                      <img src={image} alt={`Slide ${index}`} className=" w-full h- xl:h-64 object-cover" />
+                      <img src={image} alt={`Slide ${index}`} className=" w-full h- xl:h-64 object-cover"  loading='lazy'/>
                     </div>
                   ))}
                 </div>

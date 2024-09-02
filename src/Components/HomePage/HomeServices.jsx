@@ -27,7 +27,7 @@ const HomeServices = () => {
                                     <span>{service.title}</span>
                                 </div>
                                 <div className='group-hover:invisible'>
-                                    <img src={service.image} alt="" className="w-full h-auto object-cover rounded-2xl" />
+                                    <img src={service.image} alt="services" className="w-full h-auto object-cover rounded-2xl" loading='lazy' />
                                 </div>
                                 <div className="absolute inset-0 flex translate-y-[60%] flex-col items-center justify-center px-9 text-center transition-all duration-500 group-hover:translate-y-0">
                                     <p className="text-lg  text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 mt-28">

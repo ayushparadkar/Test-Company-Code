@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import myImage from "../../assests/ZZZZZ2898.jpg";
-import image5 from "../../assests/responsive.jpg";
-import image6 from "../../assests/Online shopping.jpg";
-import image7 from "../../assests/custome.jpg";
-import image8 from "../../assests/Cms1.jpg";
-import image9 from "../../assests/seo.jpg";
-import image10 from "../../assests/Web Hosting.jpg";
+import myImage from "../../assests/ZZZZZ2898.webp";
+import image5 from "../../assests/responsive.webp";
+import image6 from "../../assests/Online shopping.webp";
+import image7 from "../../assests/custome.webp";
+import image8 from "../../assests/Cms1.webp";
+import image9 from "../../assests/seo.webp";
+import image10 from "../../assests/Web Hosting.webp";
 import {
   FaArrowRight,
   FaCloud,
@@ -35,6 +35,7 @@ const WebDevelopment = () => {
           src={image}
           alt={title}
           className="w-full h-full object-cover rounded-t-2xl"
+          loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
       </div>
@@ -53,6 +54,7 @@ const WebDevelopment = () => {
           src={myImage}
           alt="Full Stack Development Services"
           className="w-full h-56 md:h-72 object-cover rounded-lg"
+          loading="lazy"
         />
         <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center text-center text-white bg-black bg-opacity-50 rounded-lg p-4 md:p-8">
           <h1 className="wow animate__animated animate__fadeInDown text-3xl md:text-5xl font-extrabold text-shadow-lg">

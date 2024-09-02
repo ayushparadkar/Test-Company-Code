@@ -20,7 +20,7 @@ const AboutUs = () => {
     return (
         <div className=''>
             <div className="relative text-center mb-2 mt-5 mx-5 ">
-                <img className="h-72 w-full object-cover rounded-xl" src={assets.AboutUs} alt="header about us" />
+                <img className="h-72 w-full object-cover rounded-xl" src={assets.AboutUs} loading='lazy' alt="header about us" />
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-gray-700 ">
                     <div className='flex flex-col font-bold text-3xl wow animate__animated animate__pulse sm:mb-5'>
                         <span>"Innovating today, shaping tomorrow. Together,</span>
@@ -41,6 +41,7 @@ const AboutUs = () => {
                             src={assets.WWR}
                             className="w-96 mx-auto  "
                             alt="Who We Are"
+                            loading='lazy'
                         />
 
                     </div>
@@ -48,10 +49,10 @@ const AboutUs = () => {
                 <div className="flex flex-col justify-center text-black wow animate__animated animate__backInRight">
                     <div className='text-3xl font-bold text-red-500 mb-5'>WHO WE ARE ?</div>
                     <p className="mb-4 text-lg leading-relaxed wow animate__animated ">
-                        Welcome to Itrio, your innovative partner in the world of IT solutions. As a forward-thinking startup, we are dedicated to redefining the IT landscape with cutting-edge technology and a fresh perspective.
+                        Welcome to Hidden Leaf Technologies, your innovative partner in the world of IT solutions. As a forward-thinking startup, we are dedicated to redefining the IT landscape with cutting-edge technology and a fresh perspective.
                     </p>
                     <p className="text-lg leading-relaxed">
-                        At Itrio, our mission is to empower businesses with state-of-the-art IT solutions that drive efficiency, foster growth, and unlock new opportunities. Our team of passionate tech experts combines deep industry knowledge with a commitment to excellence, providing tailored services that address the unique needs of each client.
+                        At Hidden Leaf Technologies, our mission is to empower businesses with state-of-the-art IT solutions that drive efficiency, foster growth, and unlock new opportunities. Our team of passionate tech experts combines deep industry knowledge with a commitment to excellence, providing tailored services that address the unique needs of each client.
                     </p>
                 </div>
             </div>
@@ -67,7 +68,7 @@ const AboutUs = () => {
                         </p>
                     </div>
                     <div className=' grid place-content-center'>
-                        <img src={assets.why} className='w-96 ' alt="" />
+                        <img src={assets.why} className='w-96 ' alt="why us" loading='lazy' />
                     </div>
                 </div>
                 <div className='flex flex-wrap justify-around gap-8 p-4'>
@@ -110,10 +111,10 @@ const AboutUs = () => {
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                     <div className="flex space-x-4">
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.instagram.com/roshan_khapre?igsh=ZzNibmhtdHI2bmU2" target="_blank" rel="noopener noreferrer">
                                             <Instagram className="text-gray-900 hover:text-red-500 transition-colors duration-200" />
                                         </a>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/roshan-khapre-4a9266242?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                                             <LinkedIn className="text-gray-900 hover:text-blue-500 transition-colors duration-200" />
                                         </a>
                                     </div>
@@ -134,17 +135,17 @@ const AboutUs = () => {
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                     <div className="flex space-x-4">
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.instagram.com/ayush.paradkar.1?igsh=MWd5cDhjeTQ2dWE3cQ==" target="_blank" rel="noopener noreferrer">
                                             <Instagram className="text-gray-900 hover:text-red-500 transition-colors duration-200" />
                                         </a>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/ayush-paradkar-b7685822a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                                             <LinkedIn className="text-gray-900 hover:text-blue-500 transition-colors duration-200" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div className="text-xl font-semibold">AYUSH PARADKAR</div>
-                            <div className="text-sm text-gray-500">Frontend Developer</div>
+                            <div className="text-sm text-gray-500">Full Stack Developer</div>
                         </div>
 
                         {/* Team Member 3 */}
@@ -158,17 +159,17 @@ const AboutUs = () => {
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                     <div className="flex space-x-4">
-                                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.instagram.com/shubham_kinkar_sk?igsh=MXczNzF5ZXR3bjdpdg==" target="_blank" rel="noopener noreferrer">
                                             <Instagram className="text-gray-900 hover:text-red-500 transition-colors duration-200" />
                                         </a>
-                                        <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/shubham-kinkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
                                             <LinkedIn className="text-gray-900 hover:text-blue-500 transition-colors duration-200" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div className="text-xl font-semibold">SHUBHAM KINKAR</div>
-                            <div className="text-sm text-gray-500">Full Stack Developer</div>
+                            <div className="text-sm text-gray-500">Mern Stack Developer</div>
                         </div>
                     </div>
                 </div>

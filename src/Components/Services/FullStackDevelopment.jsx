@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
-import myImage from "../../assests/ZZZZZ2898.jpg";
-import image1 from "../../assests/web-design-concept-with-drawings.jpg";
-import image2 from "../../assests/26815.jpg";
-import image3 from "../../assests/Wavy_Tech-22_Single-06.jpg";
-import image4 from "../../assests/4872663.jpg";
+import myImage from "../../assests/ZZZZZ2898.webp";
+import image1 from "../../assests/web-design-concept-with-drawings.webp";
+import image2 from "../../assests/26815.webp";
+import image3 from "../../assests/Wavy_Tech-22_Single-06.webp";
+import image4 from "../../assests/4872663.webp";
 import {
   FaReact,
   FaNodeJs,
@@ -25,13 +25,14 @@ const FullStackDevelopment = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-white py-16 px-4 md:px-16 lg:px-32">
+    <div className="min-h-screen bg-white py-16 px-4 md:px-16 lg:px-32 wow animate_animated animate_fadeInUp">
       {/* Header Section */}
       <div className="relative mb-16">
         <img
           src={myImage}
           alt="Full Stack Development Services"
-          className="w-full h-96 object-cover rounded-lg shadow-lg"
+          className="w-full h-96 object-cover rounded-lg shadow-lg wow animate_animated animate_fadeInUp"
+          loading="lazy"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white text-center p-6 rounded-lg">
           <h1 className="wow animate__animated animate__backInLeft text-5xl font-extrabold mb-4">
@@ -50,7 +51,7 @@ const FullStackDevelopment = () => {
         </div>
       </div>
       {/* Services Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-16 wow animate__animated animate__slideInUp animate__bounce animate__delay-1s">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 my-16 wow animate_animated animate_fadeInUp animate__bounce animate__delay-1s">
         {[
           {
             title: "Web Design",
@@ -79,13 +80,14 @@ const FullStackDevelopment = () => {
         ].map((service, index) => (
           <div
             key={index}
-            className="bg-white  rounded-2xl shadow-lg hover:shadow-2xl  overflow-hidden "
+            className="bg-white  rounded-2xl shadow-lg hover:shadow-2xl  overflow-hidden wow animate_animated animate_fadeInUp"
           >
             <div className="relative h-64">
               <img
                 src={service.image}
                 alt={service.title}
                 className="w-full h-full object-cover rounded-t-2xl"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-60"></div>
             </div>

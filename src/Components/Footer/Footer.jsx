@@ -13,7 +13,7 @@ const Footer = () => {
              
            <div className='container mx-auto py-10 px-6'>
              <div className='grid md:grid-cols-3 grid-cols-1 gap-7 md:mt-24 md:ml-32'>
-             <div className='   '>
+             <div >
                     <h2 className='text-2xl font-bold mb-4 text-slate-200 pl-3'>SERVICES</h2>
                     <ul className='space-y-2 text-neutral-400  text-lg '>
                         <li  className=' hover:text-white   w-56'><Link to='/FullStackDevelopment' ><span><ChevronRightIcon/></span > Full Stack Development</Link></li>
@@ -22,7 +22,7 @@ const Footer = () => {
 
                     </ul>
                 </div>
-                <div className='   '>
+                <div >
                     <h2 className='text-2xl font-bold mb-4 text-slate-200 pl-3 '>QUICK LINK</h2>
                     <ul className='space-y-2 text-neutral-400  p-0  w-24 text-lg '>
                         <li className=' hover:text-white w-28  '><Link to="/AboutUs"><span><ChevronRightIcon/></span> About us</Link></li>
@@ -32,12 +32,12 @@ const Footer = () => {
                         <li className=' hover:text-white w-28'><Link to='/ContactUs'><span><ChevronRightIcon/></span>Contact us</Link></li>
                     </ul>
                 </div>
-                <div className=''>
+                <div >
                     <div>
                         <h2 className='text-2xl font-bold mb-4 text-slate-200 '>GET IN TOUCH</h2>
                         <ul className='text-neutral-400 text-lg' >
                             <li className=' hover:text-white mb-4  w-44 '><CallIcon />&nbsp; +91 7999031586</li>
-                            <li className='hover:text-white  w-56'><EmailIcon />&nbsp; Contact@tomato.com</li>
+                            <li className='hover:text-white  w-96'><EmailIcon />&nbsp; contact@hiddenleaftechnologies.com</li>
                         </ul>
                     </div>
                     <div className='mt-7'>
@@ -58,9 +58,9 @@ const Footer = () => {
                 </div>
                </div>
             </div>
-            <hr className='md:mt-28  mx-8'/>
+            <hr className='md:mt-28 mt-3 sm:mx-8'/>
             
-            <p className='text-center text-neutral-400 text-lg mt-5  '>&copy; {new Date().getFullYear()} Your Name. All rights reserved.</p>
+            <p className='text-center text-neutral-400 text-sm sm:text-lg mt-5  '>&copy; {new Date().getFullYear()} Hidden Leaf Technologies. All rights reserved.</p>
              </div>
         </footer>
         

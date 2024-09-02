@@ -2,9 +2,9 @@ import React from 'react';
 import { assets } from '../../assests/assests.js';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from 'react-router-dom';
-import pharma from "../../assests/myristicapharmaceutical.png"
-import Ecomm from '../../assests/eccom.jpg'
-import social from '../../assests/social.jpg'
+import pharma from "../../assests/myristicapharmaceutical.webp"
+import Ecomm from '../../assests/eccom.webp'
+import social from '../../assests/social.webp'
 const Projects = () => {
   return (
     <div className="px-6 py-16 bg-gray-100">
@@ -69,6 +69,7 @@ const ProjectCard = ({ imgSrc, title, description,link }) => {
         className="h-96 w-full object-cover group-hover:opacity-80 transition-opacity duration-300"
         src={imgSrc}
         alt={title}
+        loading='lazy'
       />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex items-center justify-center text-white p-6">
         <div className="text-center">
