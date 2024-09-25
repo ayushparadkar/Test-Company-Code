@@ -12,7 +12,7 @@ import WWR from './WWR.webp'
 import logo from './logo.png'
 import mens1 from './men1 (1).webp'
 import mens2 from './men1 (2).webp'
-import mens3 from './men1 (3).webp'
+import mens3 from './mens3.png'
 
 import header from './header.webp'
 import cart from './cart.webp'
