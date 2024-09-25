@@ -62,7 +62,7 @@ const Form = () => {
       <Phone className="text-white " />
     </div>
     <Typography variant="body1" className="text-white ml-4 md:ml-0">
-      +91-7999031586
+     <a href="tel:7999031586">+91-7999031586</a> 
     </Typography>
   </div>
   <div className="flex flex-col md:flex-row items-center mb-7 mt-10 space-y-4 md:space-y-0">
@@ -70,7 +70,7 @@ const Form = () => {
       <Email className="text-white" />
     </div>
     <Typography variant="body1" className="text-white ml-4 md:ml-0">
-      contact@hiddenleaftechnologies.com
+    <a href="mailto:contact@hiddenleaftechnologies.com">contact@hiddenleaftechnologies.com</a>
     </Typography>
   </div>
   <div className="flex flex-col md:flex-row items-center mb-7 mt-10 space-y-4 md:space-y-0">
