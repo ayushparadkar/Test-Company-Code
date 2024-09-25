@@ -36,7 +36,7 @@ const Footer = () => {
                     <div>
                         <h2 className='text-2xl font-bold mb-4 text-slate-200 '>GET IN TOUCH</h2>
                         <ul className='text-neutral-400 text-lg' >
-                            <li className=' hover:text-white mb-4  w-44 '><CallIcon />&nbsp; <a href="tel:+7999031586">+91 7999031586</a></li>
+                            <li className=' hover:text-white mb-4  w-44 '><CallIcon />&nbsp; <a href="tel:+91 7999031586">+91 7999031586</a></li>
                             <li className='hover:text-white  w-96'><EmailIcon />&nbsp;<a href="mailto:contact@hiddenleaftechnologies.com"> contact@hiddenleaftechnologies.com</a></li>
                         </ul>
                     </div>

@@ -70,7 +70,7 @@ const NavbarNew = () => {
       {/* Top Bar */}
       <div className="bg-gradient-to-r from-gray-800 via-gray-900 to-black text-gray-300 text-sm py-2 shadow-lg">
         <div className="container mx-auto   items-center px-4">
-          <div className="sm:flex sm:flex-row "><a href="tel:+7999031586">Contact: +91 7999031586 </a><span className="hidden  sm:block">&nbsp;|&nbsp;</span> <span className="flex sm:flex-none " ><a href="mailto:contact@hiddenleaftechnologies.com">Email: contact@hiddenleaftechnologies.com</a></span></div>
+          <div className="sm:flex sm:flex-row "><a href="tel:+91 7999031586">Contact: +91 7999031586 </a><span className="hidden  sm:block">&nbsp;|&nbsp;</span> <span className="flex sm:flex-none " ><a href="mailto:contact@hiddenleaftechnologies.com">Email: contact@hiddenleaftechnologies.com</a></span></div>
         </div>
       </div>
 
