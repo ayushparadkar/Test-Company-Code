@@ -14,6 +14,7 @@ import {
   FaWordpress,
 } from "react-icons/fa";
 import { SiMongodb, SiSpringboot } from "react-icons/si";
+import "animate.css";
 import WOW from "wowjs";
 import { Link } from "react-router-dom";
 
@@ -27,7 +28,7 @@ const FullStackDevelopment = () => {
   return (
     <div className="min-h-screen bg-white py-16 px-4 md:px-16 lg:px-32 wow animate_animated animate_fadeInUp">
       {/* Header Section */}
-      <div className="relative mb-16">
+      <div className="relative mb-16 wow animate_animated animate_fadeInUp">
         <img
           src={myImage}
           alt="Full Stack Development Services"
@@ -42,11 +43,11 @@ const FullStackDevelopment = () => {
             Transform your business with our comprehensive full stack
             development services, tailored to enhance your digital presence.
           </p>
-          <Link to='/ContactUs'>
-          <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full flex items-center transition-all duration-300 wow animate__animated  animate__lightSpeedInRight animate__bounce animate__delay-1s">
-            Contact Us
-            <FaArrowRight className="ml-2" />
-          </button>
+          <Link to="/ContactUs">
+            <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-2 px-6 rounded-full flex items-center transition-all duration-300 wow animate__animated  animate__lightSpeedInRight animate__bounce animate__delay-1s">
+              Contact Us
+              <FaArrowRight className="ml-2" />
+            </button>
           </Link>
         </div>
       </div>
