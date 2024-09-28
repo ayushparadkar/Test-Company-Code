@@ -86,7 +86,7 @@ const AboutUs = () => {
                     </div>
                     <div className='w-40 h-40 shadow-2xl rounded-full flex flex-col items-center justify-center text-center'>
                         <div className='text-3xl mb-2'><FaHandsHelping /></div>
-                        <div className='text-lg'><p>Trust & Respect</p></div>
+                        <div className='text-lg'><p>Trust & Respect </p></div>
                     </div>
                 </div>
 
