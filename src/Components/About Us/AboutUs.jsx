@@ -153,22 +153,22 @@ const AboutUs = () => {
                             <div className="relative w-48 h-48 mb-4 group">
                                 <img
                                     src={assets.mens3}
-                                    alt="Shubham Kinkar"
+                                    alt="Divyanshu Bedre"
                                     className="w-full h-full object-cover rounded-full bg-slate-200 shadow-lg group-hover:shadow-xl transition-shadow duration-200"
                                     loading="lazy"
                                 />
                                 <div className="absolute inset-0 flex justify-center items-center bg-white bg-opacity-60 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-200">
                                     <div className="flex space-x-4">
-                                        <a href="https://www.instagram.com/shubham_kinkar_sk?igsh=MXczNzF5ZXR3bjdpdg==" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.instagram.com/divyanshu_bedre/" target="_blank" rel="noopener noreferrer">
                                             <Instagram className="text-gray-900 hover:text-red-500 transition-colors duration-200" />
                                         </a>
-                                        <a href="https://www.linkedin.com/in/shubham-kinkar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                                        <a href="https://www.linkedin.com/in/divyanshu-bedre-321522235/" target="_blank" rel="noopener noreferrer">
                                             <LinkedIn className="text-gray-900 hover:text-blue-500 transition-colors duration-200" />
                                         </a>
                                     </div>
                                 </div>
                             </div>
-                            <div className="text-xl font-semibold">SHUBHAM KINKAR</div>
+                            <div className="text-xl font-semibold">DIVYANSHU BEDRE</div>
                             <div className="text-sm text-gray-500">Mern Stack Developer</div>
                         </div>
                     </div>
