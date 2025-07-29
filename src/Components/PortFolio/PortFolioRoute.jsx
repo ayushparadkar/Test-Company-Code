@@ -1,18 +1,24 @@
 import React from 'react'
 import Pharmacy from './Pharmacy'
 import FoodDelevery from './FoodDelevery'
-import ECommercePortfolio from './ECommercePortfolio'
+
 import InstagramCloneSection from './InstagramCloneSection'
 import Form from '../Contact Us/Form'
 import PortfolioHeader from './PortfolioHeader'
+import FooddyPortfolio from './FooddyPortfolio'
+import DarshanCafePortfolio from './DarshanCafePortfolio'
+import DrAmitJainPortfolio from './DrAmitJainPortfolio'
 
 const PortFolioRoute = () => {
   return (
     <div>
         <PortfolioHeader/>
         <Pharmacy/>
+        <DarshanCafePortfolio/>
+        <DrAmitJainPortfolio/>
+        <FooddyPortfolio/>
         <FoodDelevery/>
-        <ECommercePortfolio/>
+        
         <InstagramCloneSection/>
         <Form />
     </div>

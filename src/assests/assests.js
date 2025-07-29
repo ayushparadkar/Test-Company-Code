@@ -30,6 +30,12 @@ import Ecommerce5 from './Ecommerce5.webp'
 import Ecommerce6 from './Ecommerce6.webp'
 import Ecommerce7 from './Ecommerce7.webp'
 
+import darshancafe1 from "../assests/cafe.jpg";
+import darshancafe2 from "../assests/cafemenu.jpg";
+import darshancafe3 from "../assests/cafereview.jpg";
+import darshancafe4 from "../assests/cafeservices.jpg";
+import darshancafe5 from "../assests/cafe.jpg";
+
 
 import WWB from './WWR.webp'
 import why from './WHY.webp'
@@ -81,6 +87,12 @@ export const assets = {
     Ecommerce5,
     Ecommerce6,
     Ecommerce7,
+
+    darshancafe1,
+  darshancafe2,
+  darshancafe3,
+  darshancafe4,
+  darshancafe5,
 
     img1,
     img2,
